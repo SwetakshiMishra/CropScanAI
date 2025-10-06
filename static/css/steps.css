@@ -1,0 +1,82 @@
+/* WRAPPER */
+.steps-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+/* MAIN PARENT CARD */
+.steps-main-card {
+  background: linear-gradient(90deg, #ffb347, #ffcc33); /* orange-yellow like your image */
+  padding: 50px 50px;
+  border-radius: 80px;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  padding-bottom: 50px;
+}
+
+.steps-main-card .section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+/* FLEX LAYOUT FOR SUBCARDS */
+.steps-subcards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* SUBCARDS */
+.step-subcard {
+  background: rgba(255, 255, 255, 0.15); /* translucent */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 15px;
+  padding: 25px 20px;
+  width: 250px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover lift effect */
+.step-subcard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ICON */
+.step-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+  margin: 0 auto 15px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  border:rgba(255,255,255,0.25);
+}
+
+.step-icon img {
+  width: 35px;
+  height: 35px;
+}
+
+/* TEXT (opaque, not translucent) */
+.step-subcard h3 {
+  font-size: 1.2rem;
+  color: black; /* crisp white */
+  margin-bottom: 10px;
+}
+
+.step-subcard p {
+  font-size: 0.95rem;
+  color: #4f4a4a; /* lighter gray-white */
+}

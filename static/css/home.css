@@ -1,0 +1,118 @@
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px;
+  background: #efdca6;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.buttons a {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-right: 15px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn-primary {
+  background: #e2be09;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+.btn-secondary {
+  background: #e7eaed;
+  color: #333;
+}
+
+.btn-secondary:hover {
+  background: #0056b3;
+  color: white;
+}
+
+.hero-image img {
+  max-width: 420px;
+  border-radius: 10px;
+}
+
+/* FEATURES SECTION */
+.features-section {
+  text-align: center;
+  padding: 80px 20px;
+  margin: 60px auto;
+  max-width: 1500px;
+  background: transparent; /* 🚀 keep section background fully transparent */
+}
+
+.features-section h2 {
+  color: #d88c0d;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.features-subtitle {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent glass */
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(12px); /* frosted glass */
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.feature-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 30px rgba(21, 16, 16, 0.2);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+
+.feature-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #111;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
