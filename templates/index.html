@@ -4,42 +4,40 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CropScanAI- Scan your Millet for Ergot</title>
+  <title>{{ _('CropScanAI- Scan your Millet for Ergot') }}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/steps.css') }}">
   
-
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- TOP HEADER SECTION (Green strip) -->
   <div class="top-header">
     <div class="site-name">🌾 CropScanAI</div>
     <nav class="nav-links">
-      <a href="{{ url_for('home') }}">HOME</a>
-      <a href="{{ url_for('about_ergot') }}">ABOUT ERGOT</a>
-      <a href="{{ url_for('identify') }}">IDENTIFY</a>
-      <a href="{{ url_for('faq') }}">FAQs</a>
-      <a href="#">हिन्दी/ENGLISH</a>
+      <a href="{{ url_for('home') }}">{{ _('HOME') }}</a>
+      <a href="{{ url_for('about_ergot') }}">{{ _('ABOUT ERGOT') }}</a>
+      <a href="{{ url_for('identify') }}">{{ _('IDENTIFY') }}</a>
+      <a href="{{ url_for('faq') }}">{{ _('FAQs') }}</a>
+      {% if session.get('language', 'en') == 'en' %}
+        <a href="{{ url_for('set_language', language='hi') }}">हिन्दी</a>
+      {% else %}
+        <a href="{{ url_for('set_language', language='en') }}">ENGLISH</a>
+      {% endif %}
     </nav>
   </div>
 
-
-<!-- HERO SECTION -->
 <section class="hero">
   <div class="hero-left">
-    <span class="tagline"><i class="fa-solid fa-bolt"></i> AI Powered Crop Protection</span>
-    <h1>Pearl Millet Ergot<br>Disease Detection<br>System</h1>
+    <span class="tagline"><i class="fa-solid fa-bolt"></i> {{ _('AI Powered Crop Protection') }}</span>
+    <h1>{{ _('Pearl Millet Ergot') }}<br>{{ _('Disease Detection') }}<br>{{ _('System') }}</h1>
     <p>
-      Advanced AI-powered detection for early identification and treatment 
-      of ergot disease in pearl millet crops
+      {{ _('Advanced AI-powered detection for early identification and treatment of ergot disease in pearl millet crops') }}
     </p>
     <div class="hero-buttons">
-      <a href="{{ url_for('identify') }}" class="btn-primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
-      <a href="{{ url_for('about_ergot') }}" class="btn-secondary">Learn More</a>
+      <a href="{{ url_for('identify') }}" class="btn-primary">{{ _('Get Started') }} <i class="fa-solid fa-arrow-right"></i></a>
+      <a href="{{ url_for('about_ergot') }}" class="btn-secondary">{{ _('Learn More') }}</a>
     </div>
   </div>
   <div class="hero-right">
@@ -47,88 +45,73 @@
   </div>
 </section>
 
-
-
-<!-- FEATURES SECTION -->
 <section class="features-section">
-  <h2>Your Complete Crop Protection Toolkit</h2>
+  <h2>{{ _('Your Complete Crop Protection Toolkit') }}</h2>
   <p class="features-subtitle">
-    Our comprehensive system provides everything you need to detect, diagnose,
-    and treat ergot disease in pearl millet crops.
+    {{ _('Our comprehensive system provides everything you need to detect, diagnose, and treat ergot disease in pearl millet crops.') }}
   </p>
 
   <div class="features-grid">
     <div class="feature-card">
       <i class="fa-solid fa-camera-retro feature-icon" style="color:#ff9800;"></i>
-      <h3>Image Analysis</h3>
-      <p>Upload crop images for instant AI-powered disease detection</p>
+      <h3>{{ _('Image Analysis') }}</h3>
+      <p>{{ _('Upload crop images for instant AI-powered disease detection') }}</p>
     </div>
 
     <div class="feature-card">
       <i class="fa-solid fa-notes-medical feature-icon" style="color:#f44336;"></i>
-      <h3>Symptom Checker</h3>
-      <p>Check symptoms manually for comprehensive diagnosis</p>
+      <h3>{{ _('Symptom Checker') }}</h3>
+      <p>{{ _('Check symptoms manually for comprehensive diagnosis') }}</p>
     </div>
 
     <div class="feature-card">
       <i class="fa-solid fa-seedling feature-icon" style="color:#4caf50;"></i>
-      <h3>Soil Health Assessment</h3>
-      <p>Analyze soil conditions for optimal pearl millet growth</p>
+      <h3>{{ _('Soil Health Assessment') }}</h3>
+      <p>{{ _('Analyze soil conditions for optimal pearl millet growth') }}</p>
     </div>
 
     <div class="feature-card">
       <i class="fa-solid fa-shield-alt feature-icon" style="color:#3f51b5;"></i>
-      <h3>Treatment Recommendations</h3>
-      <p>Get personalized treatment plans based on diagnosis</p>
+      <h3>{{ _('Treatment Recommendations') }}</h3>
+      <p>{{ _('Get personalized treatment plans based on diagnosis') }}</p>
     </div>
   </div>
 </section>
 
-
-<!--3-Step Section-->
 <section class="steps-wrapper">
   <div class="steps-main-card">
-    <h1 class="section-title">How Does it Work</h1>
+    <h1 class="section-title">{{ _('How Does it Work') }}</h1>
     <div class="steps-subcards">
 
-      <!-- Step 1 -->
       <div class="step-subcard">
         <div class="step-icon">
           <img src="{{ url_for('static', filename='images/upload-icon.jpg') }}" alt="Upload">
         </div>
-        <h3>Step 1: Upload Image</h3>
-        <p>Simply upload a clear photo of your millet crop for analysis.</p>
+        <h3>{{ _('Step 1: Upload Image') }}</h3>
+        <p>{{ _('Simply upload a clear photo of your millet crop for analysis.') }}</p>
       </div>
 
-      <!-- Step 2 -->
       <div class="step-subcard">
         <div class="step-icon">
           <img src="{{ url_for('static', filename='images/ai-icon.jpg') }}" alt="AI Analysis">
         </div>
-        <h3>Step 2: AI Analysis</h3>
-        <p>Our advanced AI scans the image for signs of ergot infection.</p>
+        <h3>{{ _('Step 2: AI Analysis') }}</h3>
+        <p>{{ _('Our advanced AI scans the image for signs of ergot infection.') }}</p>
       </div>
 
-      <!-- Step 3 -->
       <div class="step-subcard">
         <div class="step-icon">
           <img src="{{ url_for('static', filename='images/report-icon.jpg') }}" alt="Report">
         </div>
-        <h3>Step 3: Get Results</h3>
-        <p>Receive instant results with detection confidence percentage.</p>
+        <h3>{{ _('Step 3: Get Results') }}</h3>
+        <p>{{ _('Receive instant results with detection confidence percentage.') }}</p>
       </div>
 
     </div>
   </div>
 </section>
-
-
   
-<!-- other HTML content -->
-
 {% include 'footer.html' %}
-
 
 </body>
 </html>
-

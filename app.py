@@ -1,19 +1,40 @@
-from flask import Flask, render_template, request, jsonify, url_for, redirect
+from flask import Flask, render_template, request, jsonify, url_for, redirect, session
 from tensorflow.keras.models import load_model
 import cv2
 import numpy as np
 import os
+from flask_babel import Babel
 
-# Flask app setup
+# 1. CREATE the Flask app
 app = Flask(
     __name__,
-    template_folder="templates",  # HTML files inside /templates
-    static_folder="static"        # CSS, JS, Images inside /static
+    template_folder="templates",
+    static_folder="static"
 )
 
-MODEL_PATH = "pearl_millet_ergot_model.h5"
+# 2. Add configurations to the 'app'
+app.config['SECRET_KEY'] = 'a-very-secret-key-for-sessions'
+app.config['LANGUAGES'] = {'en': 'English', 'hi': 'हिन्दी'}
 
-# Load model once at startup
+# --- THIS IS THE CORRECTED SECTION ---
+# 3. Define your language selection function normally
+def get_locale():
+    # Get the language from the session, defaulting to English
+    return session.get('language', 'en')
+
+# 4. Initialize Babel and pass the function directly
+babel = Babel(app, locale_selector=get_locale)
+# --- END OF CORRECTION ---
+
+# This route handles the actual language switch
+@app.route('/language/<language>')
+def set_language(language=None):
+    session['language'] = language
+    return redirect(request.referrer)
+
+# --- The rest of your code is perfect ---
+
+MODEL_PATH = "pearl_millet_ergot_model.h5"
 model = load_model(MODEL_PATH)
 
 def preprocess_image(image_path):
@@ -23,25 +44,23 @@ def preprocess_image(image_path):
     img = np.expand_dims(img, axis=0)
     return img
 
-
 # -------------------- ROUTES --------------------
 
 @app.route("/")
 def home():
-    return render_template("index.html")   # Home page
+    return render_template("index.html")
 
 @app.route("/about_ergot")
 def about_ergot():
-    return render_template("about_ergot.html")   # About Ergot
+    return render_template("about_ergot.html")
 
 @app.route("/identify")
 def identify():
-    return render_template("identify.html")   # Identify disease
+    return render_template("identify.html")
 
 @app.route("/faq")
 def faq():
-    return render_template("faq.html")   # FAQs page
-
+    return render_template("faq.html")
 
 # -------------------- PREDICTION ROUTE --------------------
 
@@ -51,23 +70,17 @@ def predict():
         return jsonify({"error": "No file uploaded"})
 
     file = request.files["file"]
-
-    # Save uploaded file inside /static/uploads
     upload_dir = os.path.join(app.static_folder, "uploads")
     os.makedirs(upload_dir, exist_ok=True)
-
     file_path = os.path.join(upload_dir, file.filename)
     file.save(file_path)
 
-    # Preprocess for prediction
     img = preprocess_image(file_path)
-
-    # Predict
     pred = model.predict(img)[0][0]
-    confidence = round(float(pred) * 100, 2)  # confidence in %
-
-    if pred > 0.5:
+    
+    if pred < 0.5:
         result = "Healthy"
+        confidence = round((1 - float(pred)) * 100, 2)
         return render_template(
             "results_healthy.html",
             result=result,
@@ -76,13 +89,13 @@ def predict():
         )
     else:
         result = "Diseased: Ergot"
+        confidence = round(float(pred) * 100, 2)
         return render_template(
-            "ergot-detected.html",  # create another template for healthy
+            "ergot-detected.html",
             result=result,
-            confidence=100 - confidence,
+            confidence=confidence,
             filename=file.filename
         )
-
 
 # -------------------- RUN APP --------------------
 
