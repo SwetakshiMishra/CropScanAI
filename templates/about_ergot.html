@@ -3,153 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Ergot</title>
+  <title>{{ _('About Ergot') }}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- TOP HEADER SECTION (Green strip) -->
   <div class="top-header">
     <div class="site-name">🌾 CropScanAI</div>
     <nav class="nav-links">
-      <a href="{{ url_for('home') }}">HOME</a>
-      <a href="{{ url_for('about_ergot') }}">ABOUT ERGOT</a>
-      <a href="{{ url_for('identify') }}">IDENTIFY</a>
-      <a href="{{ url_for('faq') }}">FAQs</a>
-      <a href="#">हिन्दी/ENGLISH</a>
+      <a href="{{ url_for('home') }}">{{ _('HOME') }}</a>
+      <a href="{{ url_for('about_ergot') }}">{{ _('ABOUT ERGOT') }}</a>
+      <a href="{{ url_for('identify') }}">{{ _('IDENTIFY') }}</a>
+      <a href="{{ url_for('faq') }}">{{ _('FAQs') }}</a>
+      {% if session.get('language', 'en') == 'en' %}
+        <a href="{{ url_for('set_language', language='hi') }}">हिन्दी</a>
+      {% else %}
+        <a href="{{ url_for('set_language', language='en') }}">ENGLISH</a>
+      {% endif %}
     </nav>
   </div>
   
-  <!-- HERO BANNER -->
   <header>
-    <h1>About Ergot</h1>
-    <p>Learn what ergot is, why it matters, and how it affects pearl millet crops.</p>
-    <!--<button class="btn-upload">Upload Image for Detection</button>-->
+    <h1>{{ _('About Ergot') }}</h1>
+    <p>{{ _('Learn what ergot is, why it matters, and how it affects pearl millet crops.') }}</p>
   </header>
-
     
-
-    <!-- Main Content (Card Grid) -->
     <main class="card-grid">
-        <!-- Card 1: Basic Info -->
         <section class="info-card">
             <div class="card-header">
                 <i class="fas fa-info-circle"></i>
-                <h2>Basic Information</h2>
+                <h2>{{ _('Basic Information') }}</h2>
             </div>
             <div class="card-content">
                 <div class="card-item">
-                    <h3><i class="fas fa-question"></i> What is it?</h3>
-                    <p>A toxic fungus (<em>Claviceps purpurea</em>) that replaces grains with poisonous sclerotia.</p>
+                    <h3><i class="fas fa-question"></i> {{ _('What is it?') }}</h3>
+                    <p>{{ _('A toxic fungus (Claviceps purpurea) that replaces grains with poisonous sclerotia.') }}</p>
                 </div>
                 <div class="card-item">
-                    <h3><i class="fas fa-wheat"></i> Affected Crops</h3>
-                    <p>Rye, wheat, barley, oats, and related grasses.</p>
+                    <h3><i class="fas fa-wheat"></i> {{ _('Affected Crops') }}</h3>
+                    <p>{{ _('Rye, wheat, barley, oats, and related grasses.') }}</p>
                 </div>
             </div>
             <div class="card-image">
-                <img src="images/infected.jpg" alt="Ergot sclerotia on rye">
-                <p class="caption">Purple-black ergot bodies replacing grains</p>
+                <img src="{{ url_for('static', filename='images/infected.jpg') }}" alt="Ergot sclerotia on rye">
+                <p class="caption">{{ _('Purple-black ergot bodies replacing grains') }}</p>
             </div>
         </section>
 
-        <!-- Card 2: Causes & Spread -->
         <section class="info-card accent-card">
             <div class="card-header">
                 <i class="fas fa-biohazard"></i>
-                <h2>Causes & Spread</h2>
+                <h2>{{ _('Causes & Spread') }}</h2>
             </div>
             <div class="card-content">
                 <ul class="checklist">
-                    <li><i class="fas fa-spore"></i> Spread by wind-blown spores</li>
-                    <li><i class="fas fa-cloud-rain"></i> Thrives in cool, wet weather</li>
-                    <li><i class="fas fa-recycle"></i> Lifecycle depends on flowering stage</li>
+                    <li><i class="fas fa-spore"></i> {{ _('Spread by wind-blown spores') }}</li>
+                    <li><i class="fas fa-cloud-rain"></i> {{ _('Thrives in cool, wet weather') }}</li>
+                    <li><i class="fas fa-recycle"></i> {{ _('Lifecycle depends on flowering stage') }}</li>
                 </ul>
             </div>
             <div class="card-image">
               <img src="{{ url_for('static', filename='images/ergot.jpg') }}" alt="Ergot Life Cycle">
-                <p class="caption">Lifecycle of Claviceps purpurea</p>
+                <p class="caption">{{ _('Lifecycle of Claviceps purpurea') }}</p>
             </div>
         </section>
 
-        <!-- Card 3: Symptoms -->
         <section class="info-card symptoms-card">
             <div class="card-header">
                 <i class="fas fa-clipboard-list"></i>
-                <h2>Symptoms</h2>
+                <h2>{{ _('Symptoms') }}</h2>
             </div>
             <div class="card-content">
                 <div class="symptom-stage">
-                    <h3><span class="stage-marker">1</span> Early Stage</h3>
+                    <h3><span class="stage-marker">1</span> {{ _('Early Stage') }}</h3>
                     <div class="card-image">
-                <img src="images/honeydew.jpg" alt="Ergot sclerotia on rye">
-                <p class="caption">Honeydew secretion on flowers</p>
+                <img src="{{ url_for('static', filename='images/honeydew.jpg') }}" alt="Ergot sclerotia on rye">
+                <p class="caption">{{ _('Honeydew secretion on flowers') }}</p>
             </div>
-                    <p>Honeydew secretion on flowers</p>
+                    <p>{{ _('Honeydew secretion on flowers') }}</p>
                 </div>
                 <div class="symptom-stage">
-                    <h3><span class="stage-marker">2</span> Mid Stage</h3>
-                    <p>Purple-black sclerotia development</p>
+                    <h3><span class="stage-marker">2</span> {{ _('Mid Stage') }}</h3>
+                    <p>{{ _('Purple-black sclerotia development') }}</p>
                 </div>
                 <div class="symptom-stage">
-                    <h3><span class="stage-marker">3</span> Late Stage</h3>
-                    <p>Hardened ergot bodies replace grains</p>
+                    <h3><span class="stage-marker">3</span> {{ _('Late Stage') }}</h3>
+                    <p>{{ _('Hardened ergot bodies replace grains') }}</p>
                 </div>
             </div>
         </section>
 
-        <!-- Card 4: Dangers -->
         <section class="info-card danger-card">
             <div class="card-header">
                 <i class="fas fa-skull-crossbones"></i>
-                <h2>Dangers</h2>
+                <h2>{{ _('Dangers') }}</h2>
             </div>
             <div class="card-content">
                 <div class="danger-item">
-                    <h3><i class="fas fa-user-injured"></i> Human Health</h3>
-                    <p>Ergotism (gangrene, convulsions, hallucinations)</p>
+                    <h3><i class="fas fa-user-injured"></i> {{ _('Human Health') }}</h3>
+                    <p>{{ _('Ergotism (gangrene, convulsions, hallucinations)') }}</p>
                 </div>
                 <div class="danger-item">
-                    <h3><i class="fas fa-cow"></i> Livestock</h3>
-                    <p>Reduced fertility, gangrene, death</p>
+                    <h3><i class="fas fa-cow"></i> {{ _('Livestock') }}</h3>
+                    <p>{{ _('Reduced fertility, gangrene, death') }}</p>
                 </div>
                 <div class="danger-item">
-                    <h3><i class="fas fa-dollar-sign"></i> Economic</h3>
-                    <p>Crop rejection >0.05% contamination</p>
+                    <h3><i class="fas fa-dollar-sign"></i> {{ _('Economic') }}</h3>
+                    <p>{{ _('Crop rejection >0.05% contamination') }}</p>
                 </div>
             </div>
         </section>
 
-        <!-- Card 5: Prevention -->
         <section class="info-card prevention-card">
             <div class="card-header">
                 <i class="fas fa-shield-alt"></i>
-                <h2>Prevention</h2>
+                <h2>{{ _('Prevention') }}</h2>
             </div>
             <div class="card-content">
                 <div class="prevention-method">
-                    <h3><i class="fas fa-tractor"></i> Cultural</h3>
-                    <p>Crop rotation, deep plowing</p>
+                    <h3><i class="fas fa-tractor"></i> {{ _('Cultural') }}</h3>
+                    <p>{{ _('Crop rotation, deep plowing') }}</p>
                 </div>
                 <div class="prevention-method">
-                    <h3><i class="fas fa-spray-can"></i> Chemical</h3>
-                    <p>Fungicides during flowering</p>
+                    <h3><i class="fas fa-spray-can"></i> {{ _('Chemical') }}</h3>
+                    <p>{{ _('Fungicides during flowering') }}</p>
                 </div>
                 <div class="prevention-method">
-                    <h3><i class="fas fa-filter"></i> Mechanical</h3>
-                    <p>Grain cleaning & sorting</p>
+                    <h3><i class="fas fa-filter"></i> {{ _('Mechanical') }}</h3>
+                    <p>{{ _('Grain cleaning & sorting') }}</p>
                 </div>
             </div>
         </section>
     </main>
 
-    
-<!-- other HTML content -->
-
 {% include 'footer.html' %}
 
 </body>
 </html>
-

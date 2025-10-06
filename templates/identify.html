@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CropScanAI- Scan your Millet for Ergot</title>
+  <title>{{ _('CropScanAI- Scan your Millet for Ergot') }}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -38,41 +38,43 @@
 </head>
 <body>
 
-  <!-- TOP HEADER SECTION (Green strip) -->
   <div class="top-header">
     <div class="site-name">🌾 CropScanAI</div>
     <nav class="nav-links">
-      <a href="{{ url_for('home') }}">HOME</a>
-      <a href="{{ url_for('about_ergot') }}">ABOUT ERGOT</a>
-      <a href="{{ url_for('identify') }}">IDENTIFY</a>
-      <a href="{{ url_for('faq') }}">FAQs</a>
-      <a href="#">हिन्दी/ENGLISH</a>
+      <a href="{{ url_for('home') }}">{{ _('HOME') }}</a>
+      <a href="{{ url_for('about_ergot') }}">{{ _('ABOUT ERGOT') }}</a>
+      <a href="{{ url_for('identify') }}">{{ _('IDENTIFY') }}</a>
+      <a href="{{ url_for('faq') }}">{{ _('FAQs') }}</a>
+      {% if session.get('language', 'en') == 'en' %}
+        <a href="{{ url_for('set_language', language='hi') }}">हिन्दी</a>
+      {% else %}
+        <a href="{{ url_for('set_language', language='en') }}">ENGLISH</a>
+      {% endif %}
     </nav>
   </div>
 
-  <!-- HERO BANNER -->
   <header>
-    <h1>Identify Ergot in Your Millet</h1>
-    <p>Scan. Detect. Protect.</p>
+    <h1>{{ _('Identify Ergot in Your Millet') }}</h1>
+    <p>{{ _('Scan. Detect. Protect.') }}</p>
   </header>
 
   <section class="identify-hero">
     <div class="identify-text">
-      <h1>Identify and prevent <span class="highlight">ergot infection</span> in millet</h1>
+      <h1>{{ _('Identify and prevent') }} <span class="highlight">{{ _('ergot infection') }}</span> {{ _('in millet') }}</h1>
       <p class="subtext">
-        Worried about your millet's safety?  
-        Use our tool to detect ergot instantly and get prevention tips in seconds.
+        {{ _("Worried about your millet's safety?") }}
+        {{ _('Use our tool to detect ergot instantly and get prevention tips in seconds.') }}
       </p>
 
       <form id="upload-form" action="/predict" method="POST" enctype="multipart/form-data">
         <input type="file" name="file" id="file-input" accept="image/*" required class="hidden">
         
         <button type="button" class="cta-btn" onclick="document.getElementById('file-input').click();">
-          Select Image 
-        </button><input type="submit" id="submit-btn" value="Check for Ergot" class="hidden">
+          {{ _('Select Image') }}
+        </button>
+        <input type="submit" id="submit-btn" value="{{ _('Check for Ergot') }}" class="hidden">
         
         <div id="file-name" class="file-name hidden"></div>
-        
         
       </form>
     </div>
@@ -81,17 +83,14 @@
       <div class="image-container">
         <img src="{{ url_for('static', filename='images/millet-sample.jpg') }}" alt="Millet Sample">
         <div class="result-tag infected">
-          <p class="status">Infected Millet</p>
-          <p class="details">Ergot fungus detected with high confidence</p>
-          <button class="cure-btn">View Tips</button>
+          <p class="status">{{ _('Infected Millet') }}</p>
+          <p class="details">{{ _('Ergot fungus detected with high confidence') }}</p>
+          <button class="cure-btn">{{ _('View Tips') }}</button>
         </div>
       </div>
     </div>
   </section>
-
     
-<!-- other HTML content -->
-
 {% include 'footer.html' %}
 
   <script>
@@ -102,7 +101,7 @@
       
       if (this.files.length > 0) {
         // Show selected file name
-        fileNameDiv.textContent = 'Selected: ' + this.files[0].name;
+        fileNameDiv.textContent = "{{ _('Selected:') }} " + this.files[0].name;
         fileNameDiv.classList.remove('hidden');
         
         // Show submit button
@@ -116,5 +115,3 @@
 
 </body>
 </html>
-
-

@@ -1,0 +1,935 @@
+# Hindi translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-10-06 19:15+0530\n"
+"PO-Revision-Date: 2025-10-06 19:16+0530\n"
+"Last-Translator: Gemini AI\n"
+"Language: hi\n"
+"Language-Team: hi <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: templates/about_ergot.html:6 templates/about_ergot.html:28
+msgid "About Ergot"
+msgstr "अरगट के बारे में"
+
+#: templates/about_ergot.html:15 templates/ergot-detected.html:42
+#: templates/faq.html:15 templates/identify.html:44 templates/index.html:19
+#: templates/results_healthy.html:41
+msgid "HOME"
+msgstr "होम"
+
+#: templates/about_ergot.html:16 templates/ergot-detected.html:43
+#: templates/faq.html:16 templates/identify.html:45 templates/index.html:20
+#: templates/results_healthy.html:42
+msgid "ABOUT ERGOT"
+msgstr "अरगट के बारे में"
+
+#: templates/about_ergot.html:17 templates/ergot-detected.html:44
+#: templates/faq.html:17 templates/identify.html:46 templates/index.html:21
+#: templates/results_healthy.html:43
+msgid "IDENTIFY"
+msgstr "पहचान करें"
+
+#: templates/about_ergot.html:18 templates/ergot-detected.html:45
+#: templates/faq.html:18 templates/identify.html:47 templates/index.html:22
+#: templates/results_healthy.html:44
+msgid "FAQs"
+msgstr "अक्सर पूछे जाने वाले प्रश्न"
+
+#: templates/about_ergot.html:29
+msgid ""
+"Learn what ergot is, why it matters, and how it affects pearl millet "
+"crops."
+msgstr "जानें कि अरगट क्या है, यह क्यों महत्वपूर्ण है, और यह बाजरे की फसलों को कैसे प्रभावित करता है।"
+
+#: templates/about_ergot.html:36
+msgid "Basic Information"
+msgstr "बुनियादी जानकारी"
+
+#: templates/about_ergot.html:40
+msgid "What is it?"
+msgstr "यह क्या है?"
+
+#: templates/about_ergot.html:41
+msgid ""
+"A toxic fungus (Claviceps purpurea) that replaces grains with poisonous "
+"sclerotia."
+msgstr "एक जहरीला कवक (क्लैविसेप्स परप्यूरिया) जो दानों को जहरीले स्क्लेरोटिया से बदल देता है।"
+
+#: templates/about_ergot.html:44
+msgid "Affected Crops"
+msgstr "प्रभावित फसलें"
+
+#: templates/about_ergot.html:45
+msgid "Rye, wheat, barley, oats, and related grasses."
+msgstr "राई, गेहूं, जौ, जई और संबंधित घासें।"
+
+#: templates/about_ergot.html:50
+msgid "Purple-black ergot bodies replacing grains"
+msgstr "बैंगनी-काले अरगट पिंड जो दानों की जगह ले रहे हैं"
+
+#: templates/about_ergot.html:57
+msgid "Causes & Spread"
+msgstr "कारण और फैलाव"
+
+#: templates/about_ergot.html:61
+msgid "Spread by wind-blown spores"
+msgstr "हवा से उड़ने वाले बीजाणुओं द्वारा फैलता है"
+
+#: templates/about_ergot.html:62
+msgid "Thrives in cool, wet weather"
+msgstr "ठंडे, नम मौसम में पनपता है"
+
+#: templates/about_ergot.html:63
+msgid "Lifecycle depends on flowering stage"
+msgstr "जीवन चक्र फूल आने की अवस्था पर निर्भर करता है"
+
+#: templates/about_ergot.html:68
+msgid "Lifecycle of Claviceps purpurea"
+msgstr "क्लैविसेप्स परप्यूरिया का जीवन चक्र"
+
+#: templates/about_ergot.html:75
+msgid "Symptoms"
+msgstr "लक्षण"
+
+#: templates/about_ergot.html:79
+msgid "Early Stage"
+msgstr "प्रारंभिक अवस्था"
+
+#: templates/about_ergot.html:82 templates/about_ergot.html:84
+msgid "Honeydew secretion on flowers"
+msgstr "फूलों पर मधुरस (हनीड्यू) का स्राव"
+
+#: templates/about_ergot.html:87
+msgid "Mid Stage"
+msgstr "मध्य अवस्था"
+
+#: templates/about_ergot.html:88
+msgid "Purple-black sclerotia development"
+msgstr "बैंगनी-काले स्क्लेरोटिया का विकास"
+
+#: templates/about_ergot.html:91
+msgid "Late Stage"
+msgstr "अंतिम अवस्था"
+
+#: templates/about_ergot.html:92
+msgid "Hardened ergot bodies replace grains"
+msgstr "कठोर अरगट पिंड दानों की जगह ले लेते हैं"
+
+#: templates/about_ergot.html:100
+msgid "Dangers"
+msgstr "खतरे"
+
+#: templates/about_ergot.html:104
+msgid "Human Health"
+msgstr "मानव स्वास्थ्य"
+
+#: templates/about_ergot.html:105
+msgid "Ergotism (gangrene, convulsions, hallucinations)"
+msgstr "अरगटिज्म (गैंग्रीन, ऐंठन, मतिभ्रम)"
+
+#: templates/about_ergot.html:108
+msgid "Livestock"
+msgstr "पशुधन"
+
+#: templates/about_ergot.html:109
+msgid "Reduced fertility, gangrene, death"
+msgstr "प्रजनन क्षमता में कमी, गैंग्रीन, मृत्यु"
+
+#: templates/about_ergot.html:112
+msgid "Economic"
+msgstr "आर्थिक"
+
+#: templates/about_ergot.html:113
+#, python-format
+msgid "Crop rejection >0.05%% contamination"
+msgstr "0.05%% से अधिक संदूषण पर फसल की अस्वीकृति"
+
+#: templates/about_ergot.html:121
+msgid "Prevention"
+msgstr "रोकथाम"
+
+#: templates/about_ergot.html:125
+msgid "Cultural"
+msgstr "सांस्कृतिक"
+
+#: templates/about_ergot.html:126
+msgid "Crop rotation, deep plowing"
+msgstr "फसल चक्र, गहरी जुताई"
+
+#: templates/about_ergot.html:129
+msgid "Chemical"
+msgstr "रासायनिक"
+
+#: templates/about_ergot.html:130
+msgid "Fungicides during flowering"
+msgstr "फूल आने के दौरान कवकनाशी"
+
+#: templates/about_ergot.html:133
+msgid "Mechanical"
+msgstr "यांत्रिक"
+
+#: templates/about_ergot.html:134
+msgid "Grain cleaning & sorting"
+msgstr "अनाज की सफाई और छंटाई"
+
+#: templates/ergot-detected.html:6
+msgid "Ergot Detected - CropScanAI"
+msgstr "अरगट का पता चला - क्रॉपस्कैनएआई"
+
+#: templates/ergot-detected.html:60
+msgid "Ergot Detected in Your Sample"
+msgstr "आपके नमूने में अरगट का पता चला"
+
+#: templates/ergot-detected.html:63
+msgid ""
+"Our AI analysis has detected signs of ergot infection in your pearl "
+"millet sample. Please review the results below and take appropriate "
+"action."
+msgstr "हमारे एआई विश्लेषण ने आपके बाजरे के नमूने में अरगट संक्रमण के संकेत पाए हैं। कृपया नीचे दिए गए परिणामों की समीक्षा करें और उचित कार्रवाई करें।"
+
+#: templates/ergot-detected.html:67
+msgid "Detection Confidence:"
+msgstr "पहचान की सटीकता:"
+
+#: templates/ergot-detected.html:78
+msgid "Your Uploaded Image"
+msgstr "आपकी अपलोड की गई छवि"
+
+#: templates/ergot-detected.html:82
+msgid "Infected Areas Highlighted"
+msgstr "संक्रमित क्षेत्रों को हाइलाइट किया गया"
+
+#: templates/ergot-detected.html:87
+msgid "Recommended Next Steps"
+msgstr "अनुशंसित अगले कदम"
+
+#: templates/ergot-detected.html:89
+msgid "Isolate the infected crops to prevent further spread"
+msgstr "आगे फैलने से रोकने के लिए संक्रमित फसलों को अलग करें"
+
+#: templates/ergot-detected.html:90
+msgid ""
+"Consider using appropriate fungicides as recommended by agricultural "
+"experts"
+msgstr "कृषि विशेषज्ञों द्वारा अनुशंसित उपयुक्त कवकनाशी का उपयोग करने पर विचार करें"
+
+#: templates/ergot-detected.html:91
+msgid "Adjust planting density to improve air circulation"
+msgstr "हवा के संचार में सुधार के लिए रोपण घनत्व को समायोजित करें"
+
+#: templates/ergot-detected.html:92
+msgid "Practice crop rotation to break the disease cycle"
+msgstr "रोग चक्र को तोड़ने के लिए फसल चक्र का अभ्यास करें"
+
+#: templates/ergot-detected.html:93
+msgid "Consult with local agricultural extension services for specific guidance"
+msgstr "विशिष्ट मार्गदर्शन के लिए स्थानीय कृषि विस्तार सेवाओं से परामर्श करें"
+
+#: templates/ergot-detected.html:99 templates/results_healthy.html:94
+msgid "Scan Another Image"
+msgstr "दूसरी छवि स्कैन करें"
+
+#: templates/ergot-detected.html:102
+msgid "Learn More About Ergot"
+msgstr "अरगट के बारे में और जानें"
+
+#: templates/ergot-detected.html:105
+msgid "Print This Report"
+msgstr "यह रिपोर्ट प्रिंट करें"
+
+#: templates/faq.html:6 templates/identify.html:6 templates/index.html:7
+msgid "CropScanAI- Scan your Millet for Ergot"
+msgstr "क्रॉपस्कैनएआई - अपने बाजरे को अरगट के लिए स्कैन करें"
+
+#: templates/faq.html:28
+msgid "FAQ(Frequently Asked Questions)"
+msgstr "अक्सर पूछे जाने वाले प्रश्न (FAQ)"
+
+#: templates/faq.html:29
+msgid ""
+"Quick answers to your biggest questions about detecting and preventing "
+"ergot in pearl millet."
+msgstr "बाजरे में अरगट का पता लगाने और रोकने के बारे में आपके सबसे बड़े सवालों के त्वरित उत्तर।"
+
+#: templates/faq.html:36
+msgid "What is ergot and why is it harmful?"
+msgstr "अरगट क्या है और यह हानिकारक क्यों है?"
+
+#: templates/faq.html:40
+msgid ""
+"Ergot is a fungal disease that affects cereal crops like pearl millet. It"
+" produces toxic alkaloids that can cause serious health problems if "
+"consumed, including convulsions, hallucinations, and even death in severe"
+" cases."
+msgstr "अरगट एक फंगल रोग है जो बाजरा जैसी अनाज की फसलों को प्रभावित करता है। यह जहरीले अल्कलॉइड पैदा करता है जो सेवन करने पर गंभीर स्वास्थ्य समस्याएं पैदा कर सकता है, जिसमें ऐंठन, मतिभ्रम और गंभीर मामलों में मृत्यु भी शामिल है।"
+
+#: templates/faq.html:46
+msgid "How does this tool detect ergot?"
+msgstr "यह उपकरण अरगट का पता कैसे लगाता है?"
+
+#: templates/faq.html:50
+msgid ""
+"Our tool uses advanced AI image recognition trained on thousands of "
+"images of healthy and ergot-infected millet. It analyzes the visual "
+"characteristics of your uploaded images to identify potential ergot "
+"contamination."
+msgstr "हमारा उपकरण उन्नत एआई छवि पहचान का उपयोग करता है जिसे स्वस्थ और अरगट-संक्रमित बाजरे की हजारों छवियों पर प्रशिक्षित किया गया है। यह संभावित अरगट संदूषण की पहचान करने के लिए आपकी अपलोड की गई छवियों की दृश्य विशेषताओं का विश्लेषण करता है।"
+
+#: templates/faq.html:56
+msgid "What should I do if ergot is detected?"
+msgstr "यदि अरगट का पता चलता है तो मुझे क्या करना चाहिए?"
+
+#: templates/faq.html:60
+msgid ""
+"Separate and safely dispose of infected grains. Do not mix them with "
+"healthy ones."
+msgstr "संक्रमित दानों को अलग करें और सुरक्षित रूप से निपटाएं। उन्हें स्वस्थ दानों के साथ न मिलाएं।"
+
+#: templates/faq.html:66
+msgid "Can ergot-infected grains be consumed or sold?"
+msgstr "क्या अरगट-संक्रमित अनाज का सेवन या बिक्री की जा सकती है?"
+
+#: templates/faq.html:70
+msgid "No. They are toxic and unsafe for food, feed, or sale."
+msgstr "नहीं। वे भोजन, चारे या बिक्री के लिए जहरीले और असुरक्षित हैं।"
+
+#: templates/faq.html:76
+msgid "How can I prevent ergot infection in the future?"
+msgstr "मैं भविष्य में अरगट संक्रमण को कैसे रोक सकता हूँ?"
+
+#: templates/faq.html:80
+msgid ""
+"Use clean seeds, rotate crops, and harvest on time. Avoid planting in "
+"infected soil."
+msgstr "साफ बीजों का उपयोग करें, फसलें बदलें, और समय पर कटाई करें। संक्रमित मिट्टी में रोपण से बचें।"
+
+#: templates/faq.html:86
+msgid "What kind of images should I upload for detection?"
+msgstr "पहचान के लिए मुझे किस तरह की छवियाँ अपलोड करनी चाहिए?"
+
+#: templates/faq.html:90
+msgid "Upload clear, close-up photos of the millet grains in good lighting."
+msgstr "अच्छी रोशनी में बाजरे के दानों की स्पष्ट, क्लोज-अप तस्वीरें अपलोड करें।"
+
+#: templates/faq.html:96
+msgid "Is this tool free and who can use it?"
+msgstr "क्या यह उपकरण मुफ़्त है और इसका उपयोग कौन कर सकता है?"
+
+#: templates/faq.html:100
+msgid "Yes. Anyone can use it for free to check their millet for ergot."
+msgstr "हाँ। कोई भी अपने बाजरे में अरगट की जांच के लिए इसका मुफ्त में उपयोग कर सकता है।"
+
+#: templates/footer.html:4
+msgid "About Us"
+msgstr "हमारे बारे में"
+
+#: templates/footer.html:5
+msgid ""
+"CropScanAI focuses on detecting Ergot infection in Pearl Millet crops "
+"using modern technology."
+msgstr "क्रॉपस्कैनएआई आधुनिक तकनीक का उपयोग करके बाजरे की फसलों में अरगट संक्रमण का पता लगाने पर ध्यान केंद्रित करता है।"
+
+#: templates/footer.html:6
+msgid ""
+"Our goal is to help farmers identify infected crops early, reduce losses,"
+" and ensure healthier harvests through a simple, reliable web-based tool."
+msgstr "हमारा लक्ष्य किसानों को एक सरल, विश्वसनीय वेब-आधारित उपकरण के माध्यम से संक्रमित फसलों की शीघ्र पहचान करने, नुकसान कम करने और स्वस्थ फसल सुनिश्चित करने में मदद करना है।"
+
+#: templates/footer.html:10
+msgid "Quick Links"
+msgstr "त्वरित लिंक"
+
+#: templates/footer.html:12
+msgid "Home"
+msgstr "होम"
+
+#: templates/footer.html:13
+msgid "About"
+msgstr "हमारे बारे में"
+
+#: templates/footer.html:14
+msgid "Services"
+msgstr "सेवाएं"
+
+#: templates/footer.html:15
+msgid "Contact"
+msgstr "संपर्क करें"
+
+#: templates/footer.html:16
+msgid "Blog"
+msgstr "ब्लॉग"
+
+#: templates/footer.html:21
+msgid "Contact Info"
+msgstr "संपर्क जानकारी"
+
+#: templates/footer.html:23
+msgid "123 Main Street"
+msgstr "123 मुख्य सड़क"
+
+#: templates/footer.html:23
+msgid "City, State 12345"
+msgstr "शहर, राज्य 12345"
+
+#: templates/footer.html:24
+msgid "Phone:"
+msgstr "फ़ोन:"
+
+#: templates/footer.html:25
+msgid "Email:"
+msgstr "ईमेल:"
+
+#: templates/footer.html:30
+msgid "Follow Us"
+msgstr "हमें फॉलो करें"
+
+#: templates/footer.html:38
+msgid "Subscribe to our newsletter"
+msgstr "हमारे न्यूज़लेटर की सदस्यता लें"
+
+#: templates/footer.html:41
+msgid "Your email"
+msgstr "आपका ईमेल"
+
+#: templates/footer.html:42
+msgid "Subscribe"
+msgstr "सब्सक्राइब करें"
+
+#: templates/footer.html:49
+msgid "All Rights Reserved."
+msgstr "सर्वाधिकार सुरक्षित।"
+
+#: templates/footer.html:51
+msgid "Privacy Policy"
+msgstr "गोपनीयता नीति"
+
+#: templates/footer.html:52
+msgid "Terms of Service"
+msgstr "सेवा की शर्तें"
+
+#: templates/identify.html:57
+msgid "Identify Ergot in Your Millet"
+msgstr "अपने बाजरे में अरगट की पहचान करें"
+
+#: templates/identify.html:58
+msgid "Scan. Detect. Protect."
+msgstr "स्कैन करें। पता लगाएं। सुरक्षित रखें।"
+
+#: templates/identify.html:63
+msgid "Identify and prevent"
+msgstr "पहचानें और रोकें"
+
+#: templates/identify.html:63
+msgid "ergot infection"
+msgstr "अरगट संक्रमण"
+
+#: templates/identify.html:63
+msgid "in millet"
+msgstr "बाजरे में"
+
+#: templates/identify.html:65
+msgid "Worried about your millet's safety?"
+msgstr "क्या आप अपने बाजरे की सुरक्षा को लेकर चिंतित हैं?"
+
+#: templates/identify.html:66
+msgid "Use our tool to detect ergot instantly and get prevention tips in seconds."
+msgstr "अरगट का तुरंत पता लगाने और सेकंडों में रोकथाम के टिप्स पाने के लिए हमारे टूल का उपयोग करें।"
+
+#: templates/identify.html:73
+msgid "Select Image"
+msgstr "छवि चुनें"
+
+#: templates/identify.html:75
+msgid "Check for Ergot"
+msgstr "अरगट के लिए जाँच करें"
+
+#: templates/identify.html:86
+msgid "Infected Millet"
+msgstr "संक्रमित बाजरा"
+
+#: templates/identify.html:87
+msgid "Ergot fungus detected with high confidence"
+msgstr "उच्च सटीकता के साथ अरगट कवक का पता चला"
+
+#: templates/identify.html:88
+msgid "View Tips"
+msgstr "टिप्स देखें"
+
+#: templates/identify.html:104
+msgid "Selected:"
+msgstr "चयनित:"
+
+#: templates/index.html:33
+msgid "AI Powered Crop Protection"
+msgstr "एआई संचालित फसल सुरक्षा"
+
+#: templates/index.html:34
+msgid "Pearl Millet Ergot"
+msgstr "बाजरा अरगट"
+
+#: templates/index.html:34
+msgid "Disease Detection"
+msgstr "रोग पहचान"
+
+#: templates/index.html:34
+msgid "System"
+msgstr "प्रणाली"
+
+#: templates/index.html:36
+msgid ""
+"Advanced AI-powered detection for early identification and treatment of "
+"ergot disease in pearl millet crops"
+msgstr "बाजरे की फसलों में अरगट रोग की शीघ्र पहचान और उपचार के लिए उन्नत एआई-संचालित पहचान"
+
+#: templates/index.html:39
+msgid "Get Started"
+msgstr "शुरू करें"
+
+#: templates/index.html:40
+msgid "Learn More"
+msgstr " और जानें"
+
+#: templates/index.html:49
+msgid "Your Complete Crop Protection Toolkit"
+msgstr "आपकी पूरी फसल सुरक्षा टूलकिट"
+
+#: templates/index.html:51
+msgid ""
+"Our comprehensive system provides everything you need to detect, "
+"diagnose, and treat ergot disease in pearl millet crops."
+msgstr "हमारी व्यापक प्रणाली बाजरे की फसलों में अरगट रोग का पता लगाने, निदान करने और उसका इलाज करने के लिए आवश्यक सब कुछ प्रदान करती है।"
+
+#: templates/index.html:57
+msgid "Image Analysis"
+msgstr "छवि विश्लेषण"
+
+#: templates/index.html:58
+msgid "Upload crop images for instant AI-powered disease detection"
+msgstr "तत्काल एआई-संचालित रोग का पता लगाने के लिए फसल की छवियां अपलोड करें"
+
+#: templates/index.html:63
+msgid "Symptom Checker"
+msgstr "लक्षण परीक्षक"
+
+#: templates/index.html:64
+msgid "Check symptoms manually for comprehensive diagnosis"
+msgstr "व्यापक निदान के लिए मैन्युअल रूप से लक्षणों की जांच करें"
+
+#: templates/index.html:69
+msgid "Soil Health Assessment"
+msgstr "मृदा स्वास्थ्य मूल्यांकन"
+
+#: templates/index.html:70
+msgid "Analyze soil conditions for optimal pearl millet growth"
+msgstr "बाजरे की इष्टतम वृद्धि के लिए मिट्टी की स्थितियों का विश्लेषण करें"
+
+#: templates/index.html:75
+msgid "Treatment Recommendations"
+msgstr "उपचार की सिफारिशें"
+
+#: templates/index.html:76
+msgid "Get personalized treatment plans based on diagnosis"
+msgstr "निदान के आधार पर व्यक्तिगत उपचार योजनाएं प्राप्त करें"
+
+#: templates/index.html:83
+msgid "How Does it Work"
+msgstr "यह कैसे काम करता है"
+
+#: templates/index.html:90
+msgid "Step 1: Upload Image"
+msgstr "चरण 1: छवि अपलोड करें"
+
+#: templates/index.html:91
+msgid "Simply upload a clear photo of your millet crop for analysis."
+msgstr "विश्लेषण के लिए बस अपने बाजरे की फसल की एक स्पष्ट तस्वीर अपलोड करें।"
+
+#: templates/index.html:98
+msgid "Step 2: AI Analysis"
+msgstr "चरण 2: एआई विश्लेषण"
+
+#: templates/index.html:99
+msgid "Our advanced AI scans the image for signs of ergot infection."
+msgstr "हमारा उन्नत एआई अरगट संक्रमण के संकेतों के लिए छवि को स्कैन करता है।"
+
+#: templates/index.html:106
+msgid "Step 3: Get Results"
+msgstr "चरण 3: परिणाम प्राप्त करें"
+
+#: templates/index.html:107
+msgid "Receive instant results with detection confidence percentage."
+msgstr "पहचान सटीकता प्रतिशत के साथ तत्काल परिणाम प्राप्त करें।"
+
+#: templates/results_healthy.html:6
+msgid "Healthy Crop - CropScanAI"
+msgstr "स्वस्थ फसल - क्रॉपस्कैनएआई"
+
+#: templates/results_healthy.html:59
+msgid "Healthy Crop Detected!"
+msgstr "स्वस्थ फसल का पता चला!"
+
+#: templates/results_healthy.html:64
+msgid "Great news! Our AI analysis has found"
+msgstr "खुशखबरी! हमारे एआई विश्लेषण में पाया गया है"
+
+#: templates/results_healthy.html:64
+msgid "no signs of ergot infection"
+msgstr "अरगट संक्रमण के कोई संकेत नहीं"
+
+#: templates/results_healthy.html:64
+msgid "in your pearl millet sample."
+msgstr "आपके बाजरे के नमूने में।"
+
+#: templates/results_healthy.html:68
+msgid "Health Confidence:"
+msgstr "स्वास्थ्य सटीकता:"
+
+#: templates/results_healthy.html:78
+msgid "Your Healthy Millet"
+msgstr "आपका स्वस्थ बाजरा"
+
+#: templates/results_healthy.html:82
+msgid "Tips to Keep Your Crop Healthy"
+msgstr "अपनी फसल को स्वस्थ रखने के टिप्स"
+
+#: templates/results_healthy.html:84
+msgid "Continue monitoring your crops regularly for early signs of disease"
+msgstr "रोग के शुरुआती लक्षणों के लिए अपनी फसलों की नियमित निगरानी करना जारी रखें"
+
+#: templates/results_healthy.html:85
+msgid "Practice crop rotation to maintain soil health"
+msgstr "मिट्टी के स्वास्थ्य को बनाए रखने के लिए फसल चक्र का अभ्यास करें"
+
+#: templates/results_healthy.html:86
+msgid "Ensure proper spacing between plants for good air circulation"
+msgstr "अच्छी हवा के संचार के लिए पौधों के बीच उचित दूरी सुनिश्चित करें"
+
+#: templates/results_healthy.html:87
+msgid "Use certified disease-free seeds for planting"
+msgstr "रोपण के लिए प्रमाणित रोग मुक्त बीजों का उपयोग करें"
+
+#: templates/results_healthy.html:88
+msgid "Maintain proper irrigation practices to avoid waterlogging"
+msgstr "जलभराव से बचने के लिए उचित सिंचाई प्रथाओं को बनाए रखें"
+
+#: templates/results_healthy.html:97
+msgid "Learn About Ergot"
+msgstr "अरगट के बारे में जानें"
+
+#: venv/Lib/site-packages/click/_termui_impl.py:608
+#, python-brace-format
+msgid "{editor}: Editing failed"
+msgstr "{editor}: संपादन विफल"
+
+#: venv/Lib/site-packages/click/_termui_impl.py:612
+#, python-brace-format
+msgid "{editor}: Editing failed: {e}"
+msgstr "{editor}: संपादन विफल: {e}"
+
+#: venv/Lib/site-packages/click/core.py:1104
+#: venv/Lib/site-packages/click/core.py:1141
+#, python-brace-format
+msgid "{text} {deprecated_message}"
+msgstr "{text} {deprecated_message}"
+
+#: venv/Lib/site-packages/click/core.py:1160
+msgid "Options"
+msgstr "विकल्प"
+
+#: venv/Lib/site-packages/click/core.py:1222
+#, python-brace-format
+msgid "Got unexpected extra argument ({args})"
+msgid_plural "Got unexpected extra arguments ({args})"
+msgstr[0] "अप्रत्याशित अतिरिक्त तर्क मिला ({args})"
+msgstr[1] "अप्रत्याशित अतिरिक्त तर्क मिले ({args})"
+
+#: venv/Lib/site-packages/click/core.py:1241
+#, python-brace-format
+msgid "DeprecationWarning: The command {name!r} is deprecated.{extra_message}"
+msgstr "पदावनति चेतावनी: कमांड {name!r} पदावनत है।{extra_message}"
+
+#: venv/Lib/site-packages/click/core.py:1425
+msgid "Aborted!"
+msgstr "रद्द किया गया!"
+
+#: venv/Lib/site-packages/click/core.py:1799
+msgid "Commands"
+msgstr "कमांड"
+
+#: venv/Lib/site-packages/click/core.py:1830
+msgid "Missing command."
+msgstr "कमांड गायब है।"
+
+#: venv/Lib/site-packages/click/core.py:1908
+#, python-brace-format
+msgid "No such command {name!r}."
+msgstr "ऐसा कोई कमांड {name!r} नहीं है।"
+
+#: venv/Lib/site-packages/click/core.py:2332
+msgid "Value must be an iterable."
+msgstr "मान एक पुनरावृत्ति योग्य होना चाहिए।"
+
+#: venv/Lib/site-packages/click/core.py:2355
+#, python-brace-format
+msgid "Takes {nargs} values but 1 was given."
+msgid_plural "Takes {nargs} values but {len} were given."
+msgstr[0] "{nargs} मान लेता है लेकिन 1 दिया गया था।"
+msgstr[1] "{nargs} मान लेता है लेकिन {len} दिए गए थे।"
+
+#: venv/Lib/site-packages/click/core.py:2505
+#, python-brace-format
+msgid ""
+"DeprecationWarning: The {param_type} {name!r} is "
+"deprecated.{extra_message}"
+msgstr "पदावनति चेतावनी: {param_type} {name!r} पदावनत है।{extra_message}"
+
+#: venv/Lib/site-packages/click/core.py:2956
+#, python-brace-format
+msgid "env var: {var}"
+msgstr "env var: {var}"
+
+#: venv/Lib/site-packages/click/core.py:2959
+#, python-brace-format
+msgid "default: {default}"
+msgstr "डिफ़ॉल्ट: {default}"
+
+#: venv/Lib/site-packages/click/core.py:2963
+msgid "required"
+msgstr "आवश्यक"
+
+#: venv/Lib/site-packages/click/core.py:3023
+msgid "(dynamic)"
+msgstr "(गतिशील)"
+
+#: venv/Lib/site-packages/click/decorators.py:465
+#, python-format
+msgid "%(prog)s, version %(version)s"
+msgstr "%(prog)s, संस्करण %(version)s"
+
+#: venv/Lib/site-packages/click/decorators.py:522
+msgid "Show the version and exit."
+msgstr "संस्करण दिखाएं और बाहर निकलें।"
+
+#: venv/Lib/site-packages/click/decorators.py:548
+msgid "Show this message and exit."
+msgstr "यह संदेश दिखाएं और बाहर निकलें।"
+
+#: venv/Lib/site-packages/click/exceptions.py:50
+#: venv/Lib/site-packages/click/exceptions.py:89
+#, python-brace-format
+msgid "Error: {message}"
+msgstr "त्रुटि: {message}"
+
+#: venv/Lib/site-packages/click/exceptions.py:81
+#, python-brace-format
+msgid "Try '{command} {option}' for help."
+msgstr "सहायता के लिए '{command} {option}' आज़माएँ।"
+
+#: venv/Lib/site-packages/click/exceptions.py:130
+#, python-brace-format
+msgid "Invalid value: {message}"
+msgstr "अमान्य मान: {message}"
+
+#: venv/Lib/site-packages/click/exceptions.py:132
+#, python-brace-format
+msgid "Invalid value for {param_hint}: {message}"
+msgstr "{param_hint} के लिए अमान्य मान: {message}"
+
+#: venv/Lib/site-packages/click/exceptions.py:190
+msgid "Missing argument"
+msgstr "तर्क गायब है"
+
+#: venv/Lib/site-packages/click/exceptions.py:192
+msgid "Missing option"
+msgstr "विकल्प गायब है"
+
+#: venv/Lib/site-packages/click/exceptions.py:194
+msgid "Missing parameter"
+msgstr "पैरामीटर गायब है"
+
+#: venv/Lib/site-packages/click/exceptions.py:196
+#, python-brace-format
+msgid "Missing {param_type}"
+msgstr "{param_type} गायब है"
+
+#: venv/Lib/site-packages/click/exceptions.py:203
+#, python-brace-format
+msgid "Missing parameter: {param_name}"
+msgstr "पैरामीटर गायब है: {param_name}"
+
+#: venv/Lib/site-packages/click/exceptions.py:223
+#, python-brace-format
+msgid "No such option: {name}"
+msgstr "ऐसा कोई विकल्प नहीं: {name}"
+
+#: venv/Lib/site-packages/click/exceptions.py:235
+#, python-brace-format
+msgid "Did you mean {possibility}?"
+msgid_plural "(Possible options: {possibilities})"
+msgstr[0] "क्या आपका मतलब {possibility} था?"
+msgstr[1] "(संभावित विकल्प: {possibilities})"
+
+#: venv/Lib/site-packages/click/exceptions.py:282
+msgid "unknown error"
+msgstr "अज्ञात त्रुटि"
+
+#: venv/Lib/site-packages/click/exceptions.py:289
+#, python-brace-format
+msgid "Could not open file {filename!r}: {message}"
+msgstr "फ़ाइल {filename!r} नहीं खोली जा सकी: {message}"
+
+#: venv/Lib/site-packages/click/formatting.py:156
+msgid "Usage:"
+msgstr "उपयोग:"
+
+#: venv/Lib/site-packages/click/parser.py:199
+#, python-brace-format
+msgid "Argument {name!r} takes {nargs} values."
+msgstr "तर्क {name!r} {nargs} मान लेता है।"
+
+#: venv/Lib/site-packages/click/parser.py:381
+#, python-brace-format
+msgid "Option {name!r} does not take a value."
+msgstr "विकल्प {name!r} कोई मान नहीं लेता है।"
+
+#: venv/Lib/site-packages/click/parser.py:444
+#, python-brace-format
+msgid "Option {name!r} requires an argument."
+msgid_plural "Option {name!r} requires {nargs} arguments."
+msgstr[0] "विकल्प {name!r} के लिए एक तर्क की आवश्यकता है।"
+msgstr[1] "विकल्प {name!r} के लिए {nargs} तर्कों की आवश्यकता है।"
+
+#: venv/Lib/site-packages/click/shell_completion.py:332
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr "4.4 से पुराने बैश संस्करणों के लिए शेल पूर्णता समर्थित नहीं है।"
+
+#: veno/Lib/site-packages/click/shell_completion.py:339
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr "बैश संस्करण का पता नहीं लगाया जा सका, शेल पूर्णता समर्थित नहीं है।"
+
+#: venv/Lib/site-packages/click/termui.py:162
+msgid "Repeat for confirmation"
+msgstr "पुष्टि के लिए दोहराएं"
+
+#: venv/Lib/site-packages/click/termui.py:178
+msgid "Error: The value you entered was invalid."
+msgstr "त्रुटि: आपके द्वारा दर्ज किया गया मान अमान्य था।"
+
+#: venv/Lib/site-packages/click/termui.py:180
+#, python-brace-format
+msgid "Error: {e.message}"
+msgstr "त्रुटि: {e.message}"
+
+#: venv/Lib/site-packages/click/termui.py:191
+msgid "Error: The two entered values do not match."
+msgstr "त्रुटि: दर्ज किए गए दो मान मेल नहीं खाते।"
+
+#: venv/Lib/site-packages/click/termui.py:247
+msgid "Error: invalid input"
+msgstr "त्रुटि: अमान्य इनपुट"
+
+#: venv/Lib/site-packages/click/termui.py:866
+msgid "Press any key to continue..."
+msgstr "जारी रखने के लिए कोई भी कुंजी दबाएं..."
+
+#: venv/Lib/site-packages/click/types.py:332
+#, python-brace-format
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+"इनमें से चुनें:\n"
+"\t{choices}"
+
+#: venv/Lib/site-packages/click/types.py:369
+#, python-brace-format
+msgid "{value!r} is not {choice}."
+msgid_plural "{value!r} is not one of {choices}."
+msgstr[0] "{value!r} {choice} नहीं है।"
+msgstr[1] "{value!r} {choices} में से एक नहीं है।"
+
+#: venv/Lib/site-packages/click/types.py:460
+#, python-brace-format
+msgid "{value!r} does not match the format {format}."
+msgid_plural "{value!r} does not match the formats {formats}."
+msgstr[0] "{value!r} प्रारूप {format} से मेल नहीं खाता है।"
+msgstr[1] "{value!r} प्रारूप {formats} से मेल नहीं खाता है।"
+
+#: venv/Lib/site-packages/click/types.py:482
+#, python-brace-format
+msgid "{value!r} is not a valid {number_type}."
+msgstr "{value!r} एक मान्य {number_type} नहीं है।"
+
+#: venv/Lib/site-packages/click/types.py:538
+#, python-brace-format
+msgid "{value} is not in the range {range}."
+msgstr "{value} {range} की सीमा में नहीं है।"
+
+#: venv/Lib/site-packages/click/types.py:719
+#, python-brace-format
+msgid "{value!r} is not a valid boolean. Recognized values: {states}"
+msgstr "{value!r} एक मान्य बूलियन नहीं है। मान्यता प्राप्त मान: {states}"
+
+#: venv/Lib/site-packages/click/types.py:747
+#, python-brace-format
+msgid "{value!r} is not a valid UUID."
+msgstr "{value!r} एक मान्य UUID नहीं है।"
+
+#: venv/Lib/site-packages/click/types.py:937
+msgid "file"
+msgstr "फ़ाइल"
+
+#: venv/Lib/site-packages/click/types.py:939
+msgid "directory"
+msgstr "निर्देशिका"
+
+#: venv/Lib/site-packages/click/types.py:941
+msgid "path"
+msgstr "पथ"
+
+#: venv/Lib/site-packages/click/types.py:988
+#, python-brace-format
+msgid "{name} {filename!r} does not exist."
+msgstr "{name} {filename!r} मौजूद नहीं है।"
+
+#: venv/Lib/site-packages/click/types.py:997
+#, python-brace-format
+msgid "{name} {filename!r} is a file."
+msgstr "{name} {filename!r} एक फ़ाइल है।"
+
+#: venv/Lib/site-packages/click/types.py:1005
+#, python-brace-format
+msgid "{name} {filename!r} is a directory."
+msgstr "{name} {filename!r} एक निर्देशिका है।"
+
+#: venv/Lib/site-packages/click/types.py:1014
+#, python-brace-format
+msgid "{name} {filename!r} is not readable."
+msgstr "{name} {filename!r} पठनीय नहीं है।"
+
+#: venv/Lib/site-packages/click/types.py:1023
+#, python-brace-format
+msgid "{name} {filename!r} is not writable."
+msgstr "{name} {filename!r} लिखने योग्य नहीं है।"
+
+#: venv/Lib/site-packages/click/types.py:1032
+#, python-brace-format
+msgid "{name} {filename!r} is not executable."
+msgstr "{name} {filename!r} निष्पादन योग्य नहीं है।"
+
+#: venv/Lib/site-packages/click/types.py:1099
+#, python-brace-format
+msgid "{len_type} values are required, but {len_value} was given."
+msgid_plural "{len_type} values are required, but {len_value} were given."
+msgstr[0] "{len_type} मानों की आवश्यकता है, लेकिन {len_value} दिया गया था।"
+msgstr[1] "{len_type} मानों की आवश्यकता है, लेकिन {len_value} दिए गए थे।"

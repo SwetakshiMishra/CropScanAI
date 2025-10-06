@@ -1,0 +1,933 @@
+# Translations template for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-10-06 19:15+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: templates/about_ergot.html:6 templates/about_ergot.html:28
+msgid "About Ergot"
+msgstr ""
+
+#: templates/about_ergot.html:15 templates/ergot-detected.html:42
+#: templates/faq.html:15 templates/identify.html:44 templates/index.html:19
+#: templates/results_healthy.html:41
+msgid "HOME"
+msgstr ""
+
+#: templates/about_ergot.html:16 templates/ergot-detected.html:43
+#: templates/faq.html:16 templates/identify.html:45 templates/index.html:20
+#: templates/results_healthy.html:42
+msgid "ABOUT ERGOT"
+msgstr ""
+
+#: templates/about_ergot.html:17 templates/ergot-detected.html:44
+#: templates/faq.html:17 templates/identify.html:46 templates/index.html:21
+#: templates/results_healthy.html:43
+msgid "IDENTIFY"
+msgstr ""
+
+#: templates/about_ergot.html:18 templates/ergot-detected.html:45
+#: templates/faq.html:18 templates/identify.html:47 templates/index.html:22
+#: templates/results_healthy.html:44
+msgid "FAQs"
+msgstr ""
+
+#: templates/about_ergot.html:29
+msgid ""
+"Learn what ergot is, why it matters, and how it affects pearl millet "
+"crops."
+msgstr ""
+
+#: templates/about_ergot.html:36
+msgid "Basic Information"
+msgstr ""
+
+#: templates/about_ergot.html:40
+msgid "What is it?"
+msgstr ""
+
+#: templates/about_ergot.html:41
+msgid ""
+"A toxic fungus (Claviceps purpurea) that replaces grains with poisonous "
+"sclerotia."
+msgstr ""
+
+#: templates/about_ergot.html:44
+msgid "Affected Crops"
+msgstr ""
+
+#: templates/about_ergot.html:45
+msgid "Rye, wheat, barley, oats, and related grasses."
+msgstr ""
+
+#: templates/about_ergot.html:50
+msgid "Purple-black ergot bodies replacing grains"
+msgstr ""
+
+#: templates/about_ergot.html:57
+msgid "Causes & Spread"
+msgstr ""
+
+#: templates/about_ergot.html:61
+msgid "Spread by wind-blown spores"
+msgstr ""
+
+#: templates/about_ergot.html:62
+msgid "Thrives in cool, wet weather"
+msgstr ""
+
+#: templates/about_ergot.html:63
+msgid "Lifecycle depends on flowering stage"
+msgstr ""
+
+#: templates/about_ergot.html:68
+msgid "Lifecycle of Claviceps purpurea"
+msgstr ""
+
+#: templates/about_ergot.html:75
+msgid "Symptoms"
+msgstr ""
+
+#: templates/about_ergot.html:79
+msgid "Early Stage"
+msgstr ""
+
+#: templates/about_ergot.html:82 templates/about_ergot.html:84
+msgid "Honeydew secretion on flowers"
+msgstr ""
+
+#: templates/about_ergot.html:87
+msgid "Mid Stage"
+msgstr ""
+
+#: templates/about_ergot.html:88
+msgid "Purple-black sclerotia development"
+msgstr ""
+
+#: templates/about_ergot.html:91
+msgid "Late Stage"
+msgstr ""
+
+#: templates/about_ergot.html:92
+msgid "Hardened ergot bodies replace grains"
+msgstr ""
+
+#: templates/about_ergot.html:100
+msgid "Dangers"
+msgstr ""
+
+#: templates/about_ergot.html:104
+msgid "Human Health"
+msgstr ""
+
+#: templates/about_ergot.html:105
+msgid "Ergotism (gangrene, convulsions, hallucinations)"
+msgstr ""
+
+#: templates/about_ergot.html:108
+msgid "Livestock"
+msgstr ""
+
+#: templates/about_ergot.html:109
+msgid "Reduced fertility, gangrene, death"
+msgstr ""
+
+#: templates/about_ergot.html:112
+msgid "Economic"
+msgstr ""
+
+#: templates/about_ergot.html:113
+#, python-format
+msgid "Crop rejection >0.05% contamination"
+msgstr ""
+
+#: templates/about_ergot.html:121
+msgid "Prevention"
+msgstr ""
+
+#: templates/about_ergot.html:125
+msgid "Cultural"
+msgstr ""
+
+#: templates/about_ergot.html:126
+msgid "Crop rotation, deep plowing"
+msgstr ""
+
+#: templates/about_ergot.html:129
+msgid "Chemical"
+msgstr ""
+
+#: templates/about_ergot.html:130
+msgid "Fungicides during flowering"
+msgstr ""
+
+#: templates/about_ergot.html:133
+msgid "Mechanical"
+msgstr ""
+
+#: templates/about_ergot.html:134
+msgid "Grain cleaning & sorting"
+msgstr ""
+
+#: templates/ergot-detected.html:6
+msgid "Ergot Detected - CropScanAI"
+msgstr ""
+
+#: templates/ergot-detected.html:60
+msgid "Ergot Detected in Your Sample"
+msgstr ""
+
+#: templates/ergot-detected.html:63
+msgid ""
+"Our AI analysis has detected signs of ergot infection in your pearl "
+"millet sample. Please review the results below and take appropriate "
+"action."
+msgstr ""
+
+#: templates/ergot-detected.html:67
+msgid "Detection Confidence:"
+msgstr ""
+
+#: templates/ergot-detected.html:78
+msgid "Your Uploaded Image"
+msgstr ""
+
+#: templates/ergot-detected.html:82
+msgid "Infected Areas Highlighted"
+msgstr ""
+
+#: templates/ergot-detected.html:87
+msgid "Recommended Next Steps"
+msgstr ""
+
+#: templates/ergot-detected.html:89
+msgid "Isolate the infected crops to prevent further spread"
+msgstr ""
+
+#: templates/ergot-detected.html:90
+msgid ""
+"Consider using appropriate fungicides as recommended by agricultural "
+"experts"
+msgstr ""
+
+#: templates/ergot-detected.html:91
+msgid "Adjust planting density to improve air circulation"
+msgstr ""
+
+#: templates/ergot-detected.html:92
+msgid "Practice crop rotation to break the disease cycle"
+msgstr ""
+
+#: templates/ergot-detected.html:93
+msgid "Consult with local agricultural extension services for specific guidance"
+msgstr ""
+
+#: templates/ergot-detected.html:99 templates/results_healthy.html:94
+msgid "Scan Another Image"
+msgstr ""
+
+#: templates/ergot-detected.html:102
+msgid "Learn More About Ergot"
+msgstr ""
+
+#: templates/ergot-detected.html:105
+msgid "Print This Report"
+msgstr ""
+
+#: templates/faq.html:6 templates/identify.html:6 templates/index.html:7
+msgid "CropScanAI- Scan your Millet for Ergot"
+msgstr ""
+
+#: templates/faq.html:28
+msgid "FAQ(Frequently Asked Questions)"
+msgstr ""
+
+#: templates/faq.html:29
+msgid ""
+"Quick answers to your biggest questions about detecting and preventing "
+"ergot in pearl millet."
+msgstr ""
+
+#: templates/faq.html:36
+msgid "What is ergot and why is it harmful?"
+msgstr ""
+
+#: templates/faq.html:40
+msgid ""
+"Ergot is a fungal disease that affects cereal crops like pearl millet. It"
+" produces toxic alkaloids that can cause serious health problems if "
+"consumed, including convulsions, hallucinations, and even death in severe"
+" cases."
+msgstr ""
+
+#: templates/faq.html:46
+msgid "How does this tool detect ergot?"
+msgstr ""
+
+#: templates/faq.html:50
+msgid ""
+"Our tool uses advanced AI image recognition trained on thousands of "
+"images of healthy and ergot-infected millet. It analyzes the visual "
+"characteristics of your uploaded images to identify potential ergot "
+"contamination."
+msgstr ""
+
+#: templates/faq.html:56
+msgid "What should I do if ergot is detected?"
+msgstr ""
+
+#: templates/faq.html:60
+msgid ""
+"Separate and safely dispose of infected grains. Do not mix them with "
+"healthy ones."
+msgstr ""
+
+#: templates/faq.html:66
+msgid "Can ergot-infected grains be consumed or sold?"
+msgstr ""
+
+#: templates/faq.html:70
+msgid "No. They are toxic and unsafe for food, feed, or sale."
+msgstr ""
+
+#: templates/faq.html:76
+msgid "How can I prevent ergot infection in the future?"
+msgstr ""
+
+#: templates/faq.html:80
+msgid ""
+"Use clean seeds, rotate crops, and harvest on time. Avoid planting in "
+"infected soil."
+msgstr ""
+
+#: templates/faq.html:86
+msgid "What kind of images should I upload for detection?"
+msgstr ""
+
+#: templates/faq.html:90
+msgid "Upload clear, close-up photos of the millet grains in good lighting."
+msgstr ""
+
+#: templates/faq.html:96
+msgid "Is this tool free and who can use it?"
+msgstr ""
+
+#: templates/faq.html:100
+msgid "Yes. Anyone can use it for free to check their millet for ergot."
+msgstr ""
+
+#: templates/footer.html:4
+msgid "About Us"
+msgstr ""
+
+#: templates/footer.html:5
+msgid ""
+"CropScanAI focuses on detecting Ergot infection in Pearl Millet crops "
+"using modern technology."
+msgstr ""
+
+#: templates/footer.html:6
+msgid ""
+"Our goal is to help farmers identify infected crops early, reduce losses,"
+" and ensure healthier harvests through a simple, reliable web-based tool."
+msgstr ""
+
+#: templates/footer.html:10
+msgid "Quick Links"
+msgstr ""
+
+#: templates/footer.html:12
+msgid "Home"
+msgstr ""
+
+#: templates/footer.html:13
+msgid "About"
+msgstr ""
+
+#: templates/footer.html:14
+msgid "Services"
+msgstr ""
+
+#: templates/footer.html:15
+msgid "Contact"
+msgstr ""
+
+#: templates/footer.html:16
+msgid "Blog"
+msgstr ""
+
+#: templates/footer.html:21
+msgid "Contact Info"
+msgstr ""
+
+#: templates/footer.html:23
+msgid "123 Main Street"
+msgstr ""
+
+#: templates/footer.html:23
+msgid "City, State 12345"
+msgstr ""
+
+#: templates/footer.html:24
+msgid "Phone:"
+msgstr ""
+
+#: templates/footer.html:25
+msgid "Email:"
+msgstr ""
+
+#: templates/footer.html:30
+msgid "Follow Us"
+msgstr ""
+
+#: templates/footer.html:38
+msgid "Subscribe to our newsletter"
+msgstr ""
+
+#: templates/footer.html:41
+msgid "Your email"
+msgstr ""
+
+#: templates/footer.html:42
+msgid "Subscribe"
+msgstr ""
+
+#: templates/footer.html:49
+msgid "All Rights Reserved."
+msgstr ""
+
+#: templates/footer.html:51
+msgid "Privacy Policy"
+msgstr ""
+
+#: templates/footer.html:52
+msgid "Terms of Service"
+msgstr ""
+
+#: templates/identify.html:57
+msgid "Identify Ergot in Your Millet"
+msgstr ""
+
+#: templates/identify.html:58
+msgid "Scan. Detect. Protect."
+msgstr ""
+
+#: templates/identify.html:63
+msgid "Identify and prevent"
+msgstr ""
+
+#: templates/identify.html:63
+msgid "ergot infection"
+msgstr ""
+
+#: templates/identify.html:63
+msgid "in millet"
+msgstr ""
+
+#: templates/identify.html:65
+msgid "Worried about your millet's safety?"
+msgstr ""
+
+#: templates/identify.html:66
+msgid "Use our tool to detect ergot instantly and get prevention tips in seconds."
+msgstr ""
+
+#: templates/identify.html:73
+msgid "Select Image"
+msgstr ""
+
+#: templates/identify.html:75
+msgid "Check for Ergot"
+msgstr ""
+
+#: templates/identify.html:86
+msgid "Infected Millet"
+msgstr ""
+
+#: templates/identify.html:87
+msgid "Ergot fungus detected with high confidence"
+msgstr ""
+
+#: templates/identify.html:88
+msgid "View Tips"
+msgstr ""
+
+#: templates/identify.html:104
+msgid "Selected:"
+msgstr ""
+
+#: templates/index.html:33
+msgid "AI Powered Crop Protection"
+msgstr ""
+
+#: templates/index.html:34
+msgid "Pearl Millet Ergot"
+msgstr ""
+
+#: templates/index.html:34
+msgid "Disease Detection"
+msgstr ""
+
+#: templates/index.html:34
+msgid "System"
+msgstr ""
+
+#: templates/index.html:36
+msgid ""
+"Advanced AI-powered detection for early identification and treatment of "
+"ergot disease in pearl millet crops"
+msgstr ""
+
+#: templates/index.html:39
+msgid "Get Started"
+msgstr ""
+
+#: templates/index.html:40
+msgid "Learn More"
+msgstr ""
+
+#: templates/index.html:49
+msgid "Your Complete Crop Protection Toolkit"
+msgstr ""
+
+#: templates/index.html:51
+msgid ""
+"Our comprehensive system provides everything you need to detect, "
+"diagnose, and treat ergot disease in pearl millet crops."
+msgstr ""
+
+#: templates/index.html:57
+msgid "Image Analysis"
+msgstr ""
+
+#: templates/index.html:58
+msgid "Upload crop images for instant AI-powered disease detection"
+msgstr ""
+
+#: templates/index.html:63
+msgid "Symptom Checker"
+msgstr ""
+
+#: templates/index.html:64
+msgid "Check symptoms manually for comprehensive diagnosis"
+msgstr ""
+
+#: templates/index.html:69
+msgid "Soil Health Assessment"
+msgstr ""
+
+#: templates/index.html:70
+msgid "Analyze soil conditions for optimal pearl millet growth"
+msgstr ""
+
+#: templates/index.html:75
+msgid "Treatment Recommendations"
+msgstr ""
+
+#: templates/index.html:76
+msgid "Get personalized treatment plans based on diagnosis"
+msgstr ""
+
+#: templates/index.html:83
+msgid "How Does it Work"
+msgstr ""
+
+#: templates/index.html:90
+msgid "Step 1: Upload Image"
+msgstr ""
+
+#: templates/index.html:91
+msgid "Simply upload a clear photo of your millet crop for analysis."
+msgstr ""
+
+#: templates/index.html:98
+msgid "Step 2: AI Analysis"
+msgstr ""
+
+#: templates/index.html:99
+msgid "Our advanced AI scans the image for signs of ergot infection."
+msgstr ""
+
+#: templates/index.html:106
+msgid "Step 3: Get Results"
+msgstr ""
+
+#: templates/index.html:107
+msgid "Receive instant results with detection confidence percentage."
+msgstr ""
+
+#: templates/results_healthy.html:6
+msgid "Healthy Crop - CropScanAI"
+msgstr ""
+
+#: templates/results_healthy.html:59
+msgid "Healthy Crop Detected!"
+msgstr ""
+
+#: templates/results_healthy.html:64
+msgid "Great news! Our AI analysis has found"
+msgstr ""
+
+#: templates/results_healthy.html:64
+msgid "no signs of ergot infection"
+msgstr ""
+
+#: templates/results_healthy.html:64
+msgid "in your pearl millet sample."
+msgstr ""
+
+#: templates/results_healthy.html:68
+msgid "Health Confidence:"
+msgstr ""
+
+#: templates/results_healthy.html:78
+msgid "Your Healthy Millet"
+msgstr ""
+
+#: templates/results_healthy.html:82
+msgid "Tips to Keep Your Crop Healthy"
+msgstr ""
+
+#: templates/results_healthy.html:84
+msgid "Continue monitoring your crops regularly for early signs of disease"
+msgstr ""
+
+#: templates/results_healthy.html:85
+msgid "Practice crop rotation to maintain soil health"
+msgstr ""
+
+#: templates/results_healthy.html:86
+msgid "Ensure proper spacing between plants for good air circulation"
+msgstr ""
+
+#: templates/results_healthy.html:87
+msgid "Use certified disease-free seeds for planting"
+msgstr ""
+
+#: templates/results_healthy.html:88
+msgid "Maintain proper irrigation practices to avoid waterlogging"
+msgstr ""
+
+#: templates/results_healthy.html:97
+msgid "Learn About Ergot"
+msgstr ""
+
+#: venv/Lib/site-packages/click/_termui_impl.py:608
+#, python-brace-format
+msgid "{editor}: Editing failed"
+msgstr ""
+
+#: venv/Lib/site-packages/click/_termui_impl.py:612
+#, python-brace-format
+msgid "{editor}: Editing failed: {e}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1104
+#: venv/Lib/site-packages/click/core.py:1141
+#, python-brace-format
+msgid "{text} {deprecated_message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1160
+msgid "Options"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1222
+#, python-brace-format
+msgid "Got unexpected extra argument ({args})"
+msgid_plural "Got unexpected extra arguments ({args})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/Lib/site-packages/click/core.py:1241
+#, python-brace-format
+msgid "DeprecationWarning: The command {name!r} is deprecated.{extra_message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1425
+msgid "Aborted!"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1799
+msgid "Commands"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1830
+msgid "Missing command."
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:1908
+#, python-brace-format
+msgid "No such command {name!r}."
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:2332
+msgid "Value must be an iterable."
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:2355
+#, python-brace-format
+msgid "Takes {nargs} values but 1 was given."
+msgid_plural "Takes {nargs} values but {len} were given."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/Lib/site-packages/click/core.py:2505
+#, python-brace-format
+msgid ""
+"DeprecationWarning: The {param_type} {name!r} is "
+"deprecated.{extra_message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:2956
+#, python-brace-format
+msgid "env var: {var}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:2959
+#, python-brace-format
+msgid "default: {default}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:2963
+msgid "required"
+msgstr ""
+
+#: venv/Lib/site-packages/click/core.py:3023
+msgid "(dynamic)"
+msgstr ""
+
+#: venv/Lib/site-packages/click/decorators.py:465
+#, python-format
+msgid "%(prog)s, version %(version)s"
+msgstr ""
+
+#: venv/Lib/site-packages/click/decorators.py:522
+msgid "Show the version and exit."
+msgstr ""
+
+#: venv/Lib/site-packages/click/decorators.py:548
+msgid "Show this message and exit."
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:50
+#: venv/Lib/site-packages/click/exceptions.py:89
+#, python-brace-format
+msgid "Error: {message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:81
+#, python-brace-format
+msgid "Try '{command} {option}' for help."
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:130
+#, python-brace-format
+msgid "Invalid value: {message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:132
+#, python-brace-format
+msgid "Invalid value for {param_hint}: {message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:190
+msgid "Missing argument"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:192
+msgid "Missing option"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:194
+msgid "Missing parameter"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:196
+#, python-brace-format
+msgid "Missing {param_type}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:203
+#, python-brace-format
+msgid "Missing parameter: {param_name}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:223
+#, python-brace-format
+msgid "No such option: {name}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:235
+#, python-brace-format
+msgid "Did you mean {possibility}?"
+msgid_plural "(Possible options: {possibilities})"
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/Lib/site-packages/click/exceptions.py:282
+msgid "unknown error"
+msgstr ""
+
+#: venv/Lib/site-packages/click/exceptions.py:289
+#, python-brace-format
+msgid "Could not open file {filename!r}: {message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/formatting.py:156
+msgid "Usage:"
+msgstr ""
+
+#: venv/Lib/site-packages/click/parser.py:199
+#, python-brace-format
+msgid "Argument {name!r} takes {nargs} values."
+msgstr ""
+
+#: venv/Lib/site-packages/click/parser.py:381
+#, python-brace-format
+msgid "Option {name!r} does not take a value."
+msgstr ""
+
+#: venv/Lib/site-packages/click/parser.py:444
+#, python-brace-format
+msgid "Option {name!r} requires an argument."
+msgid_plural "Option {name!r} requires {nargs} arguments."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/Lib/site-packages/click/shell_completion.py:332
+msgid "Shell completion is not supported for Bash versions older than 4.4."
+msgstr ""
+
+#: venv/Lib/site-packages/click/shell_completion.py:339
+msgid "Couldn't detect Bash version, shell completion is not supported."
+msgstr ""
+
+#: venv/Lib/site-packages/click/termui.py:162
+msgid "Repeat for confirmation"
+msgstr ""
+
+#: venv/Lib/site-packages/click/termui.py:178
+msgid "Error: The value you entered was invalid."
+msgstr ""
+
+#: venv/Lib/site-packages/click/termui.py:180
+#, python-brace-format
+msgid "Error: {e.message}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/termui.py:191
+msgid "Error: The two entered values do not match."
+msgstr ""
+
+#: venv/Lib/site-packages/click/termui.py:247
+msgid "Error: invalid input"
+msgstr ""
+
+#: venv/Lib/site-packages/click/termui.py:866
+msgid "Press any key to continue..."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:332
+#, python-brace-format
+msgid ""
+"Choose from:\n"
+"\t{choices}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:369
+#, python-brace-format
+msgid "{value!r} is not {choice}."
+msgid_plural "{value!r} is not one of {choices}."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/Lib/site-packages/click/types.py:460
+#, python-brace-format
+msgid "{value!r} does not match the format {format}."
+msgid_plural "{value!r} does not match the formats {formats}."
+msgstr[0] ""
+msgstr[1] ""
+
+#: venv/Lib/site-packages/click/types.py:482
+#, python-brace-format
+msgid "{value!r} is not a valid {number_type}."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:538
+#, python-brace-format
+msgid "{value} is not in the range {range}."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:719
+#, python-brace-format
+msgid "{value!r} is not a valid boolean. Recognized values: {states}"
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:747
+#, python-brace-format
+msgid "{value!r} is not a valid UUID."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:937
+msgid "file"
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:939
+msgid "directory"
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:941
+msgid "path"
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:988
+#, python-brace-format
+msgid "{name} {filename!r} does not exist."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:997
+#, python-brace-format
+msgid "{name} {filename!r} is a file."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:1005
+#, python-brace-format
+msgid "{name} {filename!r} is a directory."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:1014
+#, python-brace-format
+msgid "{name} {filename!r} is not readable."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:1023
+#, python-brace-format
+msgid "{name} {filename!r} is not writable."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:1032
+#, python-brace-format
+msgid "{name} {filename!r} is not executable."
+msgstr ""
+
+#: venv/Lib/site-packages/click/types.py:1099
+#, python-brace-format
+msgid "{len_type} values are required, but {len_value} was given."
+msgid_plural "{len_type} values are required, but {len_value} were given."
+msgstr[0] ""
+msgstr[1] ""
+

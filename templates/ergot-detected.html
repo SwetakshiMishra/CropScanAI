@@ -3,196 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ergot Detected - CropScanAI</title>
+  <title>{{ _('Ergot Detected - CropScanAI') }}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    /* Additional styles specific to the results page */
-    .results-container {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 20px;
-    }
-    
-    .result-card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-    
-    .result-header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 1.5rem;
-    }
-    
-    .result-icon {
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      background: #f8d7da;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 1.5rem;
-    }
-    
-    .result-icon i {
-      font-size: 2rem;
-      color: #721c24;
-    }
-    
-    .result-title {
-      font-size: 1.8rem;
-      color: #721c24;
-      margin: 0;
-    }
-    
-    .confidence-meter {
-      margin: 1.5rem 0;
-    }
-    
-    .confidence-label {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 0.5rem;
-    }
-    
-    .meter-bar {
-      height: 20px;
-      background: #f1f1f1;
-      border-radius: 10px;
-      overflow: hidden;
-    }
-    
-    .meter-fill {
-      height: 100%;
-      background: linear-gradient(to right, #ff4d4d, #cc0000);
-      border-radius: 10px;
-      width: 0%; /* This will be set dynamically based on confidence */
-      transition: width 1s ease-in-out;
-    }
-    
-    .image-comparison {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      margin: 2rem 0;
-    }
-    
-    .image-box {
-      flex: 1;
-      min-width: 300px;
-    }
-    
-    .image-box img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    
-    .image-label {
-      text-align: center;
-      margin-top: 0.5rem;
-      font-weight: bold;
-    }
-    
-    .next-steps {
-      background: #e7f3ff;
-      border-left: 4px solid #0066cc;
-      padding: 1.5rem;
-      margin: 2rem 0;
-      border-radius: 4px;
-    }
-    
-    .next-steps h3 {
-      color: #0066cc;
-      margin-top: 0;
-    }
-    
-    .action-buttons {
-      display: flex;
-      gap: 1rem;
-      margin-top: 2rem;
-      flex-wrap: wrap;
-    }
-    
-    .btn-primary {
-      background: #28a745;
-      color: white;
-      border: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    
-    .btn-primary:hover {
-      background: #218838;
-    }
-    
-    .btn-secondary {
-      background: #6c757d;
-      color: white;
-      border: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-    
-    .btn-secondary:hover {
-      background: #5a6268;
-    }
-    
-    .btn-outline {
-      background: transparent;
-      color: #0066cc;
-      border: 2px solid #0066cc;
-      padding: 0.8rem 1.5rem;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: all 0.3s;
-    }
-    
-    .btn-outline:hover {
-      background: #0066cc;
-      color: white;
-    }
-    
-    @media (max-width: 768px) {
-      .result-header {
-        flex-direction: column;
-        text-align: center;
-      }
-      
-      .result-icon {
-        margin-right: 0;
-        margin-bottom: 1rem;
-      }
-      
-      .image-comparison {
-        flex-direction: column;
-      }
-    }
+    /* Styles are unchanged */
+    .results-container { max-width: 1200px; margin: 2rem auto; padding: 0 20px; }
+    .result-card { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); padding: 2rem; margin-bottom: 2rem; }
+    .result-header { display: flex; align-items: center; margin-bottom: 1.5rem; }
+    .result-icon { width: 70px; height: 70px; border-radius: 50%; background: #f8d7da; display: flex; align-items: center; justify-content: center; margin-right: 1.5rem; }
+    .result-icon i { font-size: 2rem; color: #721c24; }
+    .result-title { font-size: 1.8rem; color: #721c24; margin: 0; }
+    .confidence-meter { margin: 1.5rem 0; }
+    .confidence-label { display: flex; justify-content: space-between; margin-bottom: 0.5rem; }
+    .meter-bar { height: 20px; background: #f1f1f1; border-radius: 10px; overflow: hidden; }
+    .meter-fill { height: 100%; background: linear-gradient(to right, #ff4d4d, #cc0000); border-radius: 10px; width: 0%; transition: width 1s ease-in-out; }
+    .image-comparison { display: flex; flex-wrap: wrap; gap: 2rem; margin: 2rem 0; }
+    .image-box { flex: 1; min-width: 300px; }
+    .image-box img { width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+    .image-label { text-align: center; margin-top: 0.5rem; font-weight: bold; }
+    .next-steps { background: #e7f3ff; border-left: 4px solid #0066cc; padding: 1.5rem; margin: 2rem 0; border-radius: 4px; }
+    .next-steps h3 { color: #0066cc; margin-top: 0; }
+    .action-buttons { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+    .btn-primary { background: #28a745; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 6px; cursor: pointer; font-weight: bold; transition: background 0.3s; }
+    .btn-primary:hover { background: #218838; }
+    .btn-secondary { background: #6c757d; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 6px; cursor: pointer; font-weight: bold; transition: background 0.3s; }
+    .btn-secondary:hover { background: #5a6268; }
+    .btn-outline { background: transparent; color: #0066cc; border: 2px solid #0066cc; padding: 0.8rem 1.5rem; border-radius: 6px; cursor: pointer; font-weight: bold; transition: all 0.3s; }
+    .btn-outline:hover { background: #0066cc; color: white; }
+    @media (max-width: 768px) { .result-header { flex-direction: column; text-align: center; } .result-icon { margin-right: 0; margin-bottom: 1rem; } .image-comparison { flex-direction: column; } }
   </style>
 </head>
 <body>
 
-  <!-- TOP HEADER SECTION (Green strip) -->
   <div class="top-header">
     <div class="site-name">🌾 CropScanAI</div>
     <nav class="nav-links">
-      <a href="{{ url_for('home') }}">HOME</a>
-      <a href="{{ url_for('about_ergot') }}">ABOUT ERGOT</a>
-      <a href="{{ url_for('identify') }}">IDENTIFY</a>
-      <a href="{{ url_for('faq') }}">FAQs</a>
-      <a href="#">हिन्दी/ENGLISH</a>
+      <a href="{{ url_for('home') }}">{{ _('HOME') }}</a>
+      <a href="{{ url_for('about_ergot') }}">{{ _('ABOUT ERGOT') }}</a>
+      <a href="{{ url_for('identify') }}">{{ _('IDENTIFY') }}</a>
+      <a href="{{ url_for('faq') }}">{{ _('FAQs') }}</a>
+      {% if session.get('language', 'en') == 'en' %}
+        <a href="{{ url_for('set_language', language='hi') }}">हिन्दी</a>
+      {% else %}
+        <a href="{{ url_for('set_language', language='en') }}">ENGLISH</a>
+      {% endif %}
     </nav>
   </div>
 
@@ -202,14 +57,14 @@
         <div class="result-icon">
           <i class="fas fa-exclamation-triangle"></i>
         </div>
-        <h1 class="result-title">Ergot Detected in Your Sample</h1>
+        <h1 class="result-title">{{ _('Ergot Detected in Your Sample') }}</h1>
       </div>
       
-      <p>Our AI analysis has detected signs of ergot infection in your pearl millet sample. Please review the results below and take appropriate action.</p>
+      <p>{{ _('Our AI analysis has detected signs of ergot infection in your pearl millet sample. Please review the results below and take appropriate action.') }}</p>
       
       <div class="confidence-meter">
         <div class="confidence-label">
-          <span>Detection Confidence:</span>
+          <span>{{ _('Detection Confidence:') }}</span>
           <span id="confidence-value">{{ confidence }}%</span>
         </div>
         <div class="meter-bar">
@@ -220,42 +75,38 @@
       <div class="image-comparison">
         <div class="image-box">
           <img src="{{ url_for('static', filename='uploads/' + filename) }}" alt="Your uploaded image">
-          <div class="image-label">Your Uploaded Image</div>
+          <div class="image-label">{{ _('Your Uploaded Image') }}</div>
         </div>
         <div class="image-box">
           <img src="{{ url_for('static', filename='images/ergot_highlighted.jpg') }}" alt="Ergot highlighted">
-          <div class="image-label">Infected Areas Highlighted</div>
+          <div class="image-label">{{ _('Infected Areas Highlighted') }}</div>
         </div>
       </div>
       
       <div class="next-steps">
-        <h3>Recommended Next Steps</h3>
+        <h3>{{ _('Recommended Next Steps') }}</h3>
         <ol>
-          <li>Isolate the infected crops to prevent further spread</li>
-          <li>Consider using appropriate fungicides as recommended by agricultural experts</li>
-          <li>Adjust planting density to improve air circulation</li>
-          <li>Practice crop rotation to break the disease cycle</li>
-          <li>Consult with local agricultural extension services for specific guidance</li>
+          <li>{{ _('Isolate the infected crops to prevent further spread') }}</li>
+          <li>{{ _('Consider using appropriate fungicides as recommended by agricultural experts') }}</li>
+          <li>{{ _('Adjust planting density to improve air circulation') }}</li>
+          <li>{{ _('Practice crop rotation to break the disease cycle') }}</li>
+          <li>{{ _('Consult with local agricultural extension services for specific guidance') }}</li>
         </ol>
       </div>
       
       <div class="action-buttons">
-  <button class="btn-primary" onclick="window.location.href='{{ url_for('identify') }}'">
-    <i class="fas fa-redo"></i> Scan Another Image
-  </button>
-  <button class="btn-secondary" onclick="window.location.href='{{ url_for('about_ergot') }}'">
-    <i class="fas fa-book"></i> Learn More About Ergot
-  </button>
-  <button class="btn-outline" onclick="window.print()">
-    <i class="fas fa-print"></i> Print This Report
-  </button>
-</div>
+          <button class="btn-primary" onclick="window.location.href='{{ url_for('identify') }}'">
+            <i class="fas fa-redo"></i> {{ _('Scan Another Image') }}
+          </button>
+          <button class="btn-secondary" onclick="window.location.href='{{ url_for('about_ergot') }}'">
+            <i class="fas fa-book"></i> {{ _('Learn More About Ergot') }}
+          </button>
+          <button class="btn-outline" onclick="window.print()">
+            <i class="fas fa-print"></i> {{ _('Print This Report') }}
+          </button>
       </div>
     </div>
   </div>
-
-   
-<!-- other HTML content -->
 
 {% include 'footer.html' %}
 
