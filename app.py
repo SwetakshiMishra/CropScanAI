@@ -44,6 +44,7 @@ def preprocess_image(image_path):
     img = np.expand_dims(img, axis=0)
     return img
 
+
 # -------------------- ROUTES --------------------
 
 @app.route("/")
