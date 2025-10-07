@@ -1,0 +1,45 @@
+<!-- Font Awesome (only once) -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<!-- Header CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+
+<div class="top-header">
+  <div class="header-container">
+    <!-- Logo -->
+    <a href="#" class="site-name">
+      <div class="logo-main">
+        <div class="logo-icon">🌾</div>
+        <div class="logo-text-container">
+          <span class="logo-title">CropScanAI</span>
+          <span class="logo-tagline">Smart Crop Detection</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="nav-links" id="navLinks">
+      <a href="{{ url_for('home') }}" class="{% if request.endpoint == 'home' %}active{% endif %}">HOME</a>
+      <a href="{{ url_for('about_ergot') }}" class="{% if request.endpoint == 'about_ergot' %}active{% endif %}">ABOUT ERGOT</a>
+      <a href="{{ url_for('identify') }}" class="{% if request.endpoint == 'identify' %}active{% endif %}">IDENTIFY</a>
+      <a href="{{ url_for('faq') }}" class="{% if request.endpoint == 'faq' %}active{% endif %}">FAQs</a>
+    </nav>
+
+    <!-- Language toggle -->
+    {% if session.get('language', 'en') == 'en' %}
+      <a href="{{ url_for('set_language', language='hi') }}" class="lang-toggle">
+        <i class="fas fa-globe"></i>
+      </a>
+    {% else %}
+      <a href="{{ url_for('set_language', language='en') }}" class="lang-toggle">
+        <i class="fas fa-globe"></i>
+      </a>
+    {% endif %}
+  </div>
+</div>
+
+
+

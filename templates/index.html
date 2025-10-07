@@ -13,39 +13,8 @@
 </head>
 <body>
 
-  <div class="top-header">
-    <div class="logo-section">
-  <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="CropScanAI Logo" class="logo-img">
-  <div class="site-text">
-    <div class="site-name">CropScanAI</div>
-    <span class="tagline2">Your Farm's Insight</span>
-  </div>
-</div>
-    <nav class="nav-links">
-      <a href="{{ url_for('home') }}">{{ _('HOME') }}</a>
-      <a href="{{ url_for('about_ergot') }}">{{ _('ABOUT ERGOT') }}</a>
-      <a href="{{ url_for('identify') }}">{{ _('IDENTIFY') }}</a>
-      <a href="{{ url_for('faq') }}">{{ _('FAQs') }}</a>
-    </nav>
-      
-      <div class="header-utilities">
-        {% if session.get('language', 'en') == 'en' %}
-            <a href="{{ url_for('set_language', language='hi') }}"><i class="fa-solid fa-globe"></i></a>
-        {% else %}
-            <a href="{{ url_for('set_language', language='en') }}"><i class="fa-solid fa-globe"></i></a>
-        {% endif %}
-        
-        <div class="toggle-container">
-            <input type="checkbox" id="theme-toggle" class="toggle-checkbox">
-            <label for="theme-toggle" class="toggle-label">
-                <span class="toggle-ball"></span>
-                <i class="fa-solid fa-sun sun-icon"></i>
-                <i class="fa-solid fa-moon moon-icon"></i>
-            </label>
-        </div>
-    </div>
-    
-  </div>
+  {% include 'base.html' %}
+
 
 <section class="hero">
   <div class="hero-left">
@@ -131,5 +100,6 @@
 </section>
   
 {% include 'footer.html' %}
+
 </body>
 </html>

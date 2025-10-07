@@ -9,20 +9,7 @@
 </head>
 <body>
 
-  <div class="top-header">
-    <div class="site-name">🌾 CropScanAI</div>
-    <nav class="nav-links">
-      <a href="{{ url_for('home') }}">{{ _('HOME') }}</a>
-      <a href="{{ url_for('about_ergot') }}">{{ _('ABOUT ERGOT') }}</a>
-      <a href="{{ url_for('identify') }}">{{ _('IDENTIFY') }}</a>
-      <a href="{{ url_for('faq') }}">{{ _('FAQs') }}</a>
-      {% if session.get('language', 'en') == 'en' %}
-        <a href="{{ url_for('set_language', language='hi') }}">हिन्दी</a>
-      {% else %}
-        <a href="{{ url_for('set_language', language='en') }}">ENGLISH</a>
-      {% endif %}
-    </nav>
-  </div>
+ {% include 'base.html' %}
 
   <header>
     <h1>{{ _('FAQ(Frequently Asked Questions)') }}</h1>
