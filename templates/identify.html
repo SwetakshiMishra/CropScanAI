@@ -1,107 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ _('CropScanAI- Scan your Millet for Ergot') }}</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    /* Additional styles for the visible submit button */
-    #submit-btn {
-      display: block !important;
-      margin-top: 15px;
-      padding: 12px 24px;
-      background-color: #3a9a3f;
-      color: white;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      font-size: 16px;
-      transition: background-color 0.3s;
-    }
-    
-    #submit-btn:hover {
-      background-color: #765689;
-    }
-    
-    .file-name {
-      margin-top: 10px;
-      font-style: italic;
-      color: #555;
-    }
-    
-    .hidden {
-      display: none;
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ _('CropScanAI- Scan your Millet for Ergot') }}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      /* Additional styles for the visible submit button */
+      #submit-btn {
+        display: block !important;
+        margin-top: 15px;
+        padding: 12px 24px;
+        background-color: #3a9a3f;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
 
- {% include 'base.html' %}
+      #submit-btn:hover {
+        background-color: #765689;
+      }
 
-  <header>
-    <h1>{{ _('Identify Ergot in Your Millet') }}</h1>
-    <p>{{ _('Scan. Detect. Protect.') }}</p>
-  </header>
+      .file-name {
+        margin-top: 10px;
+        font-style: italic;
+        color: #555;
+      }
 
-  <section class="identify-hero">
-    <div class="identify-text">
-      <h1>{{ _('Identify and prevent') }} <span class="highlight">{{ _('ergot infection') }}</span> {{ _('in millet') }}</h1>
-      <p class="subtext">
-        {{ _("Worried about your millet's safety?") }}
-        {{ _('Use our tool to detect ergot instantly and get prevention tips in seconds.') }}
-      </p>
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'base.html' %}
 
-      <form id="upload-form" action="/predict" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" id="file-input" accept="image/*" required class="hidden">
-        
-        <button type="button" class="cta-btn" onclick="document.getElementById('file-input').click();">
-          {{ _('Select Image') }}
-        </button>
-        <input type="submit" id="submit-btn" value="{{ _('Check for Ergot') }}" class="hidden">
-        
-        <div id="file-name" class="file-name hidden"></div>
-        
-      </form>
-    </div>
+    <header>
+      <h1>{{ _('Identify Ergot in Your Millet') }}</h1>
+      <p>{{ _('Scan. Detect. Protect.') }}</p>
+    </header>
 
-    <div class="identify-image">
-      <div class="image-container">
-        <img src="{{ url_for('static', filename='images/millet-sample.jpg') }}" alt="Millet Sample">
-        <div class="result-tag infected">
-          <p class="status">{{ _('Infected Millet') }}</p>
-          <p class="details">{{ _('Ergot fungus detected with high confidence') }}</p>
-          <button class="cure-btn">{{ _('View Tips') }}</button>
+    <section class="identify-hero">
+      <div class="identify-text">
+        <h1>
+          {{ _('Identify and prevent') }}
+          <span class="highlight">{{ _('ergot infection') }}</span> {{ _('in
+          millet') }}
+        </h1>
+        <p class="subtext">
+          {{ _("Worried about your millet's safety?") }} {{ _('Use our tool to
+          detect ergot instantly and get prevention tips in seconds.') }}
+        </p>
+
+        <form
+          id="upload-form"
+          action="/predict"
+          method="POST"
+          enctype="multipart/form-data"
+        >
+          <input
+            type="file"
+            name="file"
+            id="file-input"
+            accept="image/*"
+            required
+            class="hidden"
+          />
+          <div class="button-align">
+            <button
+              type="button"
+              class="cta-btn"
+              onclick="document.getElementById('file-input').click();"
+            >
+              {{ _('Select Image') }}
+            </button>
+            <input
+              type="submit"
+              id="submit-btn"
+              value="{{ _('Check for Ergot') }}"
+              class="hidden"
+            />
+          </div>
+
+          <div id="file-name" class="file-name hidden"></div>
+        </form>
+      </div>
+
+      <div class="identify-image">
+        <div class="image-gallery">
+          <div class="image-container">
+            <img
+              src="{{ url_for('static', filename='images/millet-sample.jpg') }}"
+              alt="Left Millet Sample"
+            />
+          </div>
+
+          <div class="image-container">
+            <img
+              src="{{ url_for('static', filename='images/millet-sample.jpg') }}"
+              alt="Center Millet Sample"
+            />
+            <div class="result-tag infected">
+              <p class="status">{{ _('Infected Millet') }}</p>
+              <p class="details">
+                {{ _('Ergot fungus detected with high confidence') }}
+              </p>
+              <button class="cure-btn">{{ _('View Tips') }}</button>
+            </div>
+          </div>
+
+          <div class="image-container">
+            <img
+              src="{{ url_for('static', filename='images/millet-sample.jpg') }}"
+              alt="Right Millet Sample"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-    
-{% include 'footer.html' %}
+    </section>
 
-  <script>
-    // JavaScript to handle file selection and show submit button
-    document.getElementById('file-input').addEventListener('change', function() {
-      const fileNameDiv = document.getElementById('file-name');
-      const submitBtn = document.getElementById('submit-btn');
-      
-      if (this.files.length > 0) {
-        // Show selected file name
-        fileNameDiv.textContent = "{{ _('Selected:') }} " + this.files[0].name;
-        fileNameDiv.classList.remove('hidden');
-        
-        // Show submit button
-        submitBtn.classList.remove('hidden');
-      } else {
-        fileNameDiv.classList.add('hidden');
-        submitBtn.classList.add('hidden');
-      }
-    });
-  </script>
+    {% include 'footer.html' %}
 
+    <script>
+      // JavaScript to handle file selection and show submit button
+      document
+        .getElementById("file-input")
+        .addEventListener("change", function () {
+          const fileNameDiv = document.getElementById("file-name");
+          const submitBtn = document.getElementById("submit-btn");
 
+          if (this.files.length > 0) {
+            // Show selected file name
+            fileNameDiv.textContent =
+              "{{ _('Selected:') }} " + this.files[0].name;
+            fileNameDiv.classList.remove("hidden");
 
-
-</body>
+            // Show submit button
+            submitBtn.classList.remove("hidden");
+          } else {
+            fileNameDiv.classList.add("hidden");
+            submitBtn.classList.add("hidden");
+          }
+        });
+    </script>
+  </body>
 </html>

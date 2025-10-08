@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -31,8 +31,12 @@ header {
 header::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: url("/static/images/pearlmillet-banner.jpg") no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("/static/images/pearlmillet-banner.jpg") no-repeat center
+    center/cover;
   height: 400px;
   filter: blur(4px);
   z-index: -1;
@@ -46,7 +50,7 @@ header h1 {
 header p {
   font-size: 20px;
   margin-bottom: 1.5rem;
-font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .btn-upload {
@@ -69,7 +73,7 @@ font-family: Arial, sans-serif;
 
 /* Why Section - Enhanced Layout */
 
-.section-title{
+.section-title {
   padding: 1rem;
 }
 
@@ -90,7 +94,6 @@ font-family: Arial, sans-serif;
 .why-section:hover {
   transform: translateY(-20px);
 }
-
 
 .why-section img {
   width: 350px;
@@ -124,7 +127,7 @@ font-family: Arial, sans-serif;
     gap: 2rem;
     padding: 1.5rem;
   }
-  
+
   .why-section img {
     width: 100%;
     max-width: 400px;
@@ -209,12 +212,12 @@ font-family: Arial, sans-serif;
     align-items: center;
     gap: 30px;
   }
-  
+
   .step {
     width: 80%;
     max-width: none;
   }
-  
+
   .step:not(:last-child)::after {
     display: block;
     right: auto;
@@ -283,7 +286,7 @@ font-family: Arial, sans-serif;
 .social-links a {
   display: inline-block;
   color: #fff;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -294,7 +297,7 @@ font-family: Arial, sans-serif;
 }
 
 .social-links a:hover {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .newsletter input {
@@ -352,104 +355,110 @@ font-family: Arial, sans-serif;
 
 /* ===== CARD GRID LAYOUT ===== */
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* ===== CARD STYLES ===== */
 .info-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 .info-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .card-header {
-    background: #2c3e50;
-    color: white;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  background: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.card-header i { font-size: 1.2rem; }
+.card-header i {
+  font-size: 1.2rem;
+}
 
 .card-content {
-    padding: 20px;
+  padding: 20px;
 }
-.card-item, .symptom-stage, .danger-item, .prevention-method {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
+.card-item,
+.symptom-stage,
+.danger-item,
+.prevention-method {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
 }
-.card-item:last-child, .symptom-stage:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
+.card-item:last-child,
+.symptom-stage:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
 .card-image {
-    padding: 0 20px 20px;
+  padding: 0 20px 20px;
 }
 .card-image img {
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid #eee;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #eee;
 }
 .caption {
-    font-size: 0.8rem;
-    color: #666;
-    text-align: center;
-    margin-top: 8px;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  margin-top: 8px;
 }
 
 /* ===== SPECIAL CARD VARIANTS ===== */
 .accent-card .card-header {
-    background: #db6634;
+  background: #db6634;
 }
 .danger-card .card-header {
-    background: #f82811;
+  background: #f82811;
 }
 .prevention-card .card-header {
-    background: #198613;
+  background: #198613;
 }
 .symptoms-card .card-header {
-    background: #137e86;
+  background: #137e86;
 }
 
 /* ===== STAGE MARKERS ===== */
 .stage-marker {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    background: #2c3e50;
-    color: white;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 24px;
-    margin-right: 10px;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: #2c3e50;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-right: 10px;
 }
 
 /* ===== CHECKLIST ===== */
 .checklist {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 .checklist li {
-    padding: 8px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .checklist i {
-    color: #3498db;
+  color: #3498db;
 }
 
 /* HERO LAYOUT */
@@ -539,9 +548,6 @@ font-family: Arial, sans-serif;
   border-radius: 10px;
 }
 
-
-
-
 /* FAQ STYLES */
 .faq-container {
   max-width: 800px;
@@ -553,7 +559,7 @@ font-family: Arial, sans-serif;
   margin-bottom: 15px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background-color: #f9f9f9;
   border: 1px solid #e1e1e1;
   transition: all 0.3s ease;
@@ -614,7 +620,6 @@ font-family: Arial, sans-serif;
   padding: 0 25px;
 }
 
-
 /* IDENTIFY SECTION STYLING */
 
 .identify-hero {
@@ -640,7 +645,6 @@ font-family: Arial, sans-serif;
   line-height: 1.3;
 }
 
-
 .highlight {
   color: #f2b602;
 }
@@ -651,16 +655,22 @@ font-family: Arial, sans-serif;
   margin-bottom: 25px;
   line-height: 1.6;
 }
+.button-align {
+  display: flex;
+  gap: 15px;
+}
 
 .cta-btn {
-  background: linear-gradient(90deg, #f58a07, #f5b507);
+  display: block !important;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background-color: #3a9a3f;
   color: white;
-  padding: 12px 25px;
   border: none;
-  border-radius: 25px;
-  font-weight: bold;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 .cta-btn:hover {
@@ -686,19 +696,23 @@ font-family: Arial, sans-serif;
 
 .result-tag {
   position: absolute;
-  bottom: 15px;
-  left: 15px;
-  background: white;
-  padding: 12px;
-  border-radius: 12px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-  max-width: 260px;
+  height: 90px;
+  transform: translateY(-100px);
+  margin-left: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .result-tag.infected .status {
-  color: red;
+  color: rgb(255, 157, 0);
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -707,7 +721,6 @@ font-family: Arial, sans-serif;
   color: #555;
   margin: 5px 0;
 }
-
 
 .cure-btn {
   background: #3ca06d;
@@ -721,4 +734,62 @@ font-family: Arial, sans-serif;
 
 .cure-btn:hover {
   background: #2d7f54;
+}
+
+/* new css added */
+
+.image-gallery {
+  position: relative;
+  display: flex;
+  max-width: 750px;
+
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* overflow-x: invisible; */
+  /* margin-top: 50px; */
+}
+
+/* Base image container style */
+.image-container {
+  position: relative;
+  width: 300px;
+}
+
+/* All images with soft shadow */
+.image-container img {
+  /* width: 100%; */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+}
+
+/* Overlapping effect */
+.image-gallery .image-container:nth-child(1) {
+  transform: translateX(50%) scale(0.9);
+  z-index: 1;
+  filter: blur(1.5px);
+  filter: brightness(0.85);
+}
+.image-gallery .image-container:nth-child(2) {
+  z-index: 3;
+}
+.image-gallery .image-container img:nth-child(2) {
+  z-index: 3;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+}
+.image-gallery .image-container:nth-child(3) {
+  transform: translateX(-50%) scale(0.9);
+  filter: brightness(0.85);
+  z-index: 1;
+  filter: blur(1.5px);
+}
+
+/* Only show button on middle image */
+.image-gallery .image-container:not(:nth-child(2)) .cure-btn {
+  display: none;
+}
+
+/* Add hover effect to emphasize middle */
+.image-container img:hover {
+  transform: scale(1.01);
 }
